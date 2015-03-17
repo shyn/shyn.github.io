@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Recent Content on my new hugo site </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost.lan/index.xml/</link>
+    <language>zh-Hans</language>
+    
+    
+    <updated>Sun, 09 Nov 2014 20:38:27 CST</updated>
+    
+    <item>
+      <title>hello</title>
+      <link>http://localhost.lan/a/b/c</link>
+      <pubDate>Sun, 09 Nov 2014 20:38:27 CST</pubDate>
+      
+      <guid>http://localhost.lan/a/b/c</guid>
+      <description>
+
+&lt;h1 id=&#34;toc_0&#34;&gt;This is my first blog。&lt;/h1&gt;
+
+&lt;p&gt;I am going to write blog:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost.lan/about/</link>
+      <pubDate>Sun, 09 Nov 2014 20:36:21 CST</pubDate>
+      
+      <guid>http://localhost.lan/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;this is a hugo play!&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
