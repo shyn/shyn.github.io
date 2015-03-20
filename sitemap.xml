@@ -3,12 +3,17 @@
   
   <url>
     <loc>http://dengx.in/</loc>
-    <lastmod>2014-11-09T20:38:27+08:00</lastmod>
+    <lastmod>2014-12-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dengx.in/a/b/c</loc>
+    <loc>http://dengx.in/post/2014-12-28-%E8%A2%AB%E7%8C%AB%E6%8A%93%E4%BC%A4%E6%80%8E%E4%B9%88%E5%8A%9E/</loc>
+    <lastmod>2014-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/hello/</loc>
     <lastmod>2014-11-09T20:38:27+08:00</lastmod>
   </url>
   
