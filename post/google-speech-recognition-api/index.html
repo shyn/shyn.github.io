@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>hello &middot; Deep Wind</title>
+  <title>google speech recognition api &middot; Deep Wind</title>
 
   
   <link rel="stylesheet" href="http://dengx.in//css/poole.css">
@@ -60,9 +60,20 @@
 
 <div class="content container">
   <div class="post">
-    <h1>hello</h1>
-    <span class="post-date">Nov 9, 2014 &middot; 1 minute read &middot; <a href="http://dengx.in/post/hello/#disqus_thread">Comments</a></span>
-    <p>待续。</p>
+    <h1>google speech recognition api</h1>
+    <span class="post-date">Mar 27, 2015 &middot; 1 minute read &middot; <a href="http://dengx.in/post/google-speech-recognition-api/#disqus_thread">Comments</a></span>
+    <p><a href="https://github.com/gillesdemey/google-speech-v2">https://github.com/gillesdemey/google-speech-v2</a></p>
+
+<pre><code class="language-bash">curl -X POST \
+--socks5-hostname 127.0.0.1:1080 \
+--data-binary @test.flac \
+--user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36' \
+--header 'Content-Type: audio/x-flac; rate=44100;' \
+'https://www.google.com/speech-api/v2/recognize?output=json&amp;lang=zh-CN&amp;key=YourKey'
+</code></pre>
+
+<p>如何申请key？请参照原链接。
+ google服务器应该有单文件大小限制，不知道为多少，反正我发送的「内核恐慌」的一期录音文件（45.8MB），返回了失败的结果， 本来想利用这个做成文本，提取干货的，免得要听一个多小时。</p>
 
   </div>
   <div id="disqus_thread"></div>

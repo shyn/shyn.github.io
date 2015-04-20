@@ -1,20 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Recent Content on Complex Standalone </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://dengx.in/index.xml/</link>
-    <language>zh-Hans</language>
+    <title>Complex Standalone</title>
+    <link>http://dengx.in/</link>
+    <description>Recent content on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Apr 2015 22:57:44 +0800</lastBuildDate>
+    <atom:link href="http://dengx.in/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>register us apple id</title>
+      <link>http://dengx.in/post/register-us-apple-id/</link>
+      <pubDate>Mon, 20 Apr 2015 22:57:44 +0800</pubDate>
+      
+      <guid>http://dengx.in/post/register-us-apple-id/</guid>
+      <description>&lt;p&gt;今天终于注册了美国区的苹果账号，原来这么简单，根本不需要美国信用卡（如果你不买东西的话），记录一下。&lt;/p&gt;
+
+&lt;p&gt;以下为步骤
+1. 连接&lt;code&gt;VPN&lt;/code&gt;
+2. 打开 &lt;code&gt;iTunes&lt;/code&gt;，退出当前中国区帐号，切换地区到美国（&lt;code&gt;iTunes Store&lt;/code&gt; 右下角）
+3. 切换到应用（必须是应用，即 Apps），随便点一个free的应用，比如我直接搜 &lt;code&gt;Mailbox&lt;/code&gt;，然后点 get
+4. 弹出登录框，点创建新账号
+5. step by step 你会发现在天支付信息里，默认为&lt;code&gt;None&lt;/code&gt;，不需要信用卡也可以！
+6. 填写支付地址要注意，填写VPN的IP所在地的信息，借助google maps来搞定，随便找个hotel什么的都行（未测试不这么填能不能通过）
+7. 激活&lt;code&gt;Email&lt;/code&gt;，enjoy&lt;/p&gt;
+
+&lt;p&gt;这里最麻烦的就是第1步和第6步了，万能的google一定会帮助你的。什么？！google都被封一年了？嗯……请联系我。&lt;/p&gt;
+</description>
+    </item>
     
-    <updated>Sun, 28 Dec 2014 00:00:00 UTC</updated>
+    <item>
+      <title>license</title>
+      <link>http://dengx.in/license/</link>
+      <pubDate>Sun, 19 Apr 2015 16:28:49 +0800</pubDate>
+      
+      <guid>http://dengx.in/license/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google speech recognition api</title>
+      <link>http://dengx.in/post/google-speech-recognition-api/</link>
+      <pubDate>Fri, 27 Mar 2015 20:51:52 +0800</pubDate>
+      
+      <guid>http://dengx.in/post/google-speech-recognition-api/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gillesdemey/google-speech-v2&#34;&gt;https://github.com/gillesdemey/google-speech-v2&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;curl -X POST \
+--socks5-hostname 127.0.0.1:1080 \
+--data-binary @test.flac \
+--user-agent &#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36&#39; \
+--header &#39;Content-Type: audio/x-flac; rate=44100;&#39; \
+&#39;https://www.google.com/speech-api/v2/recognize?output=json&amp;amp;lang=zh-CN&amp;amp;key=YourKey&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如何申请key？请参照原链接。
+ google服务器应该有单文件大小限制，不知道为多少，反正我发送的「内核恐慌」的一期录音文件（45.8MB），返回了失败的结果， 本来想利用这个做成文本，提取干货的，免得要听一个多小时。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>the singularity is near 10 years</title>
+      <link>http://dengx.in/post/the-singularity-is-near-10-years/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://dengx.in/post/the-singularity-is-near-10-years/</guid>
+      <description>&lt;p&gt;我对未来的技术充满憧憬，我是技术乐观主义者。但我对人类是悲观的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>review-on-kernel-panic-13</title>
+      <link>http://dengx.in/post/review-on-kernel-panic-13/</link>
+      <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://dengx.in/post/review-on-kernel-panic-13/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://kernelpanic.fm/13&#34;&gt;內核恐慌第13期「并发与异步」&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;44&amp;rsquo;的时候终于进入正题了。&lt;br /&gt;
+首先是概念的介绍。不得不说听觉信息加工比起视觉还是低效的多，一个并发、并行的区分也说了半天，如果画图可以很形象易懂。&lt;/p&gt;
+
+&lt;p&gt;夹带的干货：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CPU如何执行多任务（单逻辑计算单元）&lt;/li&gt;
+&lt;li&gt;不同的并行计算模型&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;湿货：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fs&lt;/li&gt;
+&lt;li&gt;asd&lt;/li&gt;
+&lt;li&gt;sada&lt;/li&gt;
+&lt;li&gt;asda&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;自己的疑问：&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>被猫抓伤怎么办</title>
-      <link>http://dengx.in/my-cat-bite-me</link>
-      <pubDate>Sun, 28 Dec 2014 00:00:00 UTC</pubDate>
+      <link>http://dengx.in/post/my-cat-bite-me/</link>
+      <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://dengx.in/my-cat-bite-me</guid>
+      <guid>http://dengx.in/post/my-cat-bite-me/</guid>
       <description>&lt;p&gt;16天前，我开始养猫。&lt;/p&gt;
 
 &lt;p&gt;他叫萌萌，不到三个月，很快就和我熟了。然后打闹起来各种抓、咬。那个小爪子真是锋利啊，感觉他对自己的爪子特别骄傲，借着利抓爬上爬下的。晚上喜欢钻我被窝，但又不好好睡觉，继续挠我。&lt;/p&gt;
@@ -60,7 +152,7 @@
     <item>
       <title>hello</title>
       <link>http://dengx.in/post/hello/</link>
-      <pubDate>Sun, 09 Nov 2014 20:38:27 CST</pubDate>
+      <pubDate>Sun, 09 Nov 2014 20:38:27 +0800</pubDate>
       
       <guid>http://dengx.in/post/hello/</guid>
       <description>&lt;p&gt;待续。&lt;/p&gt;
@@ -70,7 +162,7 @@
     <item>
       <title>about</title>
       <link>http://dengx.in/about/</link>
-      <pubDate>Sun, 09 Nov 2014 20:36:21 CST</pubDate>
+      <pubDate>Sun, 09 Nov 2014 20:36:21 +0800</pubDate>
       
       <guid>http://dengx.in/about/</guid>
       <description>&lt;p&gt;成功迁移到&lt;a href=&#34;http://pages.github.com&#34;&gt;Github pages&lt;/a&gt;，并且使用&lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt;生成网站。&lt;/p&gt;
