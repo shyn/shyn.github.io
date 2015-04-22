@@ -17,14 +17,17 @@
       <guid>http://dengx.in/post/register-us-apple-id/</guid>
       <description>&lt;p&gt;今天终于注册了美国区的苹果账号，原来这么简单，根本不需要美国信用卡（如果你不买东西的话），记录一下。&lt;/p&gt;
 
-&lt;p&gt;以下为步骤
-1. 连接&lt;code&gt;VPN&lt;/code&gt;
-2. 打开 &lt;code&gt;iTunes&lt;/code&gt;，退出当前中国区帐号，切换地区到美国（&lt;code&gt;iTunes Store&lt;/code&gt; 右下角）
-3. 切换到应用（必须是应用，即 Apps），随便点一个free的应用，比如我直接搜 &lt;code&gt;Mailbox&lt;/code&gt;，然后点 get
-4. 弹出登录框，点创建新账号
-5. step by step 你会发现在天支付信息里，默认为&lt;code&gt;None&lt;/code&gt;，不需要信用卡也可以！
-6. 填写支付地址要注意，填写VPN的IP所在地的信息，借助google maps来搞定，随便找个hotel什么的都行（未测试不这么填能不能通过）
-7. 激活&lt;code&gt;Email&lt;/code&gt;，enjoy&lt;/p&gt;
+&lt;p&gt;以下为步骤:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;连接&lt;code&gt;VPN&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;打开 &lt;code&gt;iTunes&lt;/code&gt;，退出当前中国区帐号，切换地区到美国（&lt;code&gt;iTunes Store&lt;/code&gt; 右下角）&lt;/li&gt;
+&lt;li&gt;切换到应用（必须是应用，即 Apps），随便点一个free的应用，比如我直接搜 &lt;code&gt;Mailbox&lt;/code&gt;，然后点 get&lt;/li&gt;
+&lt;li&gt;弹出登录框，点创建新账号&lt;/li&gt;
+&lt;li&gt;step by step 你会发现在天支付信息里，默认为&lt;code&gt;None&lt;/code&gt;，不需要信用卡也可以！&lt;/li&gt;
+&lt;li&gt;填写支付地址要注意，填写VPN的IP所在地的信息，借助google maps来搞定，随便找个hotel什么的都行（未测试不这么填能不能通过）&lt;/li&gt;
+&lt;li&gt;激活&lt;code&gt;Email&lt;/code&gt;，enjoy&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;这里最麻烦的就是第1步和第6步了，万能的google一定会帮助你的。什么？！google都被封一年了？嗯……请联系我。&lt;/p&gt;
 </description>
