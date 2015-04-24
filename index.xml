@@ -6,6 +6,8 @@
     <description>Recent content on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
+    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
     <lastBuildDate>Mon, 20 Apr 2015 22:57:44 +0800</lastBuildDate>
     <atom:link href="http://dengx.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +15,7 @@
       <title>注册美区 iTunes 帐号</title>
       <link>http://dengx.in/post/register-us-apple-id/</link>
       <pubDate>Mon, 20 Apr 2015 22:57:44 +0800</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/register-us-apple-id/</guid>
       <description>&lt;p&gt;今天终于注册了美国区的苹果账号，原来这么简单，根本不需要美国信用卡（如果你不买东西的话），记录一下。&lt;/p&gt;
 
@@ -37,16 +39,16 @@
       <title>license</title>
       <link>http://dengx.in/license/</link>
       <pubDate>Sun, 19 Apr 2015 16:28:49 +0800</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/license/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>google speech recognition api</title>
+      <title>Google语音识别API</title>
       <link>http://dengx.in/post/google-speech-recognition-api/</link>
       <pubDate>Fri, 27 Mar 2015 20:51:52 +0800</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/google-speech-recognition-api/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gillesdemey/google-speech-v2&#34;&gt;https://github.com/gillesdemey/google-speech-v2&lt;/a&gt;&lt;/p&gt;
 
@@ -67,7 +69,7 @@
       <title>奇点临近</title>
       <link>http://dengx.in/post/the-singularity-is-near-10-years/</link>
       <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/the-singularity-is-near-10-years/</guid>
       <description>&lt;p&gt;我对未来的技术充满憧憬，我是技术乐观主义者。但我对人类是悲观的。&lt;/p&gt;
 </description>
@@ -77,7 +79,7 @@
       <title>内核恐慌第十三期</title>
       <link>http://dengx.in/post/review-on-kernel-panic-13/</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/review-on-kernel-panic-13/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://kernelpanic.fm/13&#34;&gt;內核恐慌第13期「并发与异步」&lt;/a&gt;&lt;/p&gt;
 
@@ -108,7 +110,7 @@
       <title>被猫抓伤怎么办</title>
       <link>http://dengx.in/post/my-cat-bite-me/</link>
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/my-cat-bite-me/</guid>
       <description>&lt;p&gt;16天前，我开始养猫。&lt;/p&gt;
 
@@ -156,17 +158,17 @@
       <title>hello</title>
       <link>http://dengx.in/post/hello/</link>
       <pubDate>Sun, 09 Nov 2014 20:38:27 +0800</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/post/hello/</guid>
       <description>&lt;p&gt;待续。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>about</title>
+      <title></title>
       <link>http://dengx.in/about/</link>
       <pubDate>Sun, 09 Nov 2014 20:36:21 +0800</pubDate>
-      
+      <author>theone@dengx.in (Deep Wind)</author>
       <guid>http://dengx.in/about/</guid>
       <description>&lt;p&gt;成功迁移到&lt;a href=&#34;http://pages.github.com&#34;&gt;Github pages&lt;/a&gt;，并且使用&lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt;生成网站。&lt;/p&gt;
 </description>
