@@ -33,7 +33,8 @@
 
 html {
  /* font-family: 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',sans-serif;*/
- font-family: "Open Sans","Classic Grotesque W01", Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+ /*font-family: "Open Sans","Classic Grotesque W01", Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
+ font-family: 'Helvetica Neue',Helvetica, Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -95,6 +96,7 @@ a.elsewhere_link {
 
 .sidebar-nav {
   margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 .sidebar-nav-item {
   display: block;
@@ -117,7 +119,7 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     /*position: absolute;*/
     right:  1rem;
-    bottom: 1rem;
+    /*bottom: 1rem;*/
     left:   1rem;
   }
 }
