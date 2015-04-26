@@ -34,7 +34,7 @@
 html {
  /* font-family: 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',sans-serif;*/
  /*font-family: "Open Sans","Classic Grotesque W01", Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;*/
- font-family: 'Helvetica Neue',Helvetica, Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+ font-family: "Noto Serif",'Helvetica Neue',Helvetica, Arial, "Hiragino Sans GB", "STHeiti",微软雅黑, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 @media (min-width: 48em) {
   html {
