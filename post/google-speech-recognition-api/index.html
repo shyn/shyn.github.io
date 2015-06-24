@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Google语音识别API &middot; Deep Wind</title>
+
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+  
+  
+  <link rel="stylesheet" type="text/css" href="http://dengx.in/assets/css/font-awesome.css">
+  <link rel="stylesheet" href="http://dengx.in/css/poole.css">
+  <link rel="stylesheet" href="http://dengx.in/css/hyde.css">
+  <link rel="stylesheet" href="http://dengx.in/css/poole-overrides.css">
+  <link rel="stylesheet" href="http://dengx.in/css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://dengx.in/css/hyde-x.css">
+  
+  
+  
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link href="/favicon.png" rel="icon">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Complex Standalone &middot; Deep Wind" />
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>Complex Standalone</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="http://dengx.in">主页</a></li>
+      <li class="sidebar-nav-item"><a href="http://dengx.in/about">关于</a></li>
+  
+    </ul>
+
+    <nav class="elsewhere">
+      <a class="elsewhere_link fa fa-envelope" href="mailto:theone@dengx.in"></a>
+      
+      
+      
+      
+
+
+    </nav>
+  
+
+  </div>
+</div>
+
+<div class="content container">
+  <div class="post">
+    <h1>Google语音识别API</h1>
+    <span class="post-date">Mar 27, 2015  &middot; <a href="http://dengx.in/post/google-speech-recognition-api/#disqus_thread">Comments</a></span>
+    <p><a href="https://github.com/gillesdemey/google-speech-v2">https://github.com/gillesdemey/google-speech-v2</a></p>
+
+<pre><code class="language-bash">curl -X POST \
+--socks5-hostname 127.0.0.1:1080 \
+--data-binary @test.flac \
+--user-agent 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36' \
+--header 'Content-Type: audio/x-flac; rate=44100;' \
+'https://www.google.com/speech-api/v2/recognize?output=json&amp;lang=zh-CN&amp;key=YourKey'
+</code></pre>
+
+<p>如何申请key？请参照原链接。
+ google服务器应该有单文件大小限制，不知道为多少，反正我发送的「内核恐慌」的一期录音文件（45.8MB），返回了失败的结果， 本来想利用这个做成文本，提取干货的，免得要听一个多小时。</p>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+  </script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+
+<script type="text/javascript">
+var disqus_shortname = "complexstandalone";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "complexstandalone";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发环境 on Complex Standalone</title>
+    <link>http://dengx.in/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+    <description>Recent content in 开发环境 on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
+    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
+    <lastBuildDate>Sat, 30 May 2015 23:44:20 +0800</lastBuildDate>
+    <atom:link href="http://dengx.in/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>OS X 开发环境搭建</title>
+      <link>http://dengx.in/post/notes-of-setting-up-dev-env-on-os-x/</link>
+      <pubDate>Sat, 30 May 2015 23:44:20 +0800</pubDate>
+      <author>theone@dengx.in (Deep Wind)</author>
+      <guid>http://dengx.in/post/notes-of-setting-up-dev-env-on-os-x/</guid>
+      <description>&lt;!-- 用了OS X两年了，用的最多的是chrome，基本上没怎么摸索系统，完全没有了当年用windows以及用黑苹果时的那个折腾劲，于是对OS X的理解还只停留在当年玩黑苹果时的程度。终于要走上developer之路了，必须认真来认识我所使用的环境。
+ --&gt;
+
+&lt;ol&gt;
+&lt;li&gt;安装Xcode，如果我们不开发iOS的App或者OS X的原生图形应用，那就只需要Command Line Tools for Xcode. 打开终端，运行 &lt;code&gt;xcode-select  --install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;人人都爱homebrew: &lt;a href=&#34;http://brew.sh&#34;&gt;http://brew.sh&lt;/a&gt;. 将unix/linux工具优雅地port到OS X.&lt;/li&gt;
+&lt;li&gt;修改&lt;code&gt;/etc/path&lt;/code&gt;，将&lt;code&gt;/usr/local/bin&lt;/code&gt;换到第一行，这样我们就可以优先使用homebrew安装的版本了。&lt;/li&gt;
+&lt;li&gt;修改默认shell到zsh，虽然bash也还可以，但zsh有太多优秀的功能了，直击痛点。系统虽然现在自带zsh，但升级到最新版的很麻烦，而且OS X升级的时候系统本身的文件都会被覆写。&lt;/li&gt;
+&lt;li&gt;brew install virtualenv, rbenv etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这里面的原理，特别是OS X系统已经自带了python、ruby等工具，为什么还要自己装？参考这个&lt;a href=&#34;http://blog.manbolo.com/2014/09/27/use-python-effectively-on-os-x&#34;&gt;http://blog.manbolo.com/2014/09/27/use-python-effectively-on-os-x&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
