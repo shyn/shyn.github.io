@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>全局代理 on Complex Standalone</title>
+    <link>http://dengx.in/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
+    <description>Recent content in 全局代理 on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
+    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
+    <lastBuildDate>Thu, 02 Jul 2015 00:18:42 +0800</lastBuildDate>
+    <atom:link href="http://dengx.in/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>让OS X上的shadowsocks真正全局代理</title>
+      <link>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</link>
+      <pubDate>Thu, 02 Jul 2015 00:18:42 +0800</pubDate>
+      <author>theone@dengx.in (Deep Wind)</author>
+      <guid>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</guid>
+      <description>&lt;p&gt;在Mac上我用的client是shadowsocks的Mac版，用起来的缺挺方便，有自动代理和全局两种模式，自带gfwlist，甚至还有公用账号免费使用，当然出于安全尽量不要用任何这种免费账号，浏览器用着是挺爽的，不过经常在shell环境下捣腾，难免出现各种莫名奇妙的连接中断，切换为「全局模式」仍然无法连接。&lt;/p&gt;
+
+&lt;p&gt;解决方案一般推荐的都是设置shell的&lt;code&gt;http_proxy&lt;/code&gt;变量，这自然是可以的：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;export http_proxy=socks5://127.0.0.1:1080 https_proxy=socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是如果应用的网络连接不依赖系统代理，也不能设置，那只能在更底层来实现了，就像VPN做的那样，这样我们也省去了设置浏览器的繁琐。不过VPN对我来说太重了，而且还是得配置路由，好不让它跑全局。更不要说目前VPN也不太好使了。shadow-vpn 倒是轻量级高效能的，不过我还没实践。最先想到的是类似在Linux下设置iptables的方案，不需要安装额外的软件，不需要繁琐的配置，系统开销小，仅仅在底层对特定ip的流量进行转发，很灵活。然而OS X并不是Linux，它的内核Darwin是基于BSD的，虽然没有iptables，不过肯定也有类似实现的，它就是pf.&lt;/p&gt;
+
+&lt;p&gt;一个简单的twitter流量转发到shadowsocks通道的实现：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;新建一个test.conf文件&lt;/li&gt;
+&lt;li&gt;添加&lt;code&gt;rdr pass on etho inet proto tcp from any to twitter_ip_range -&amp;gt; 127.0.0.1 port 1080&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;加载转发规则：&lt;code&gt;sudo pfctl -vf test.conf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;开启pf（OS X默认没有开启）：&lt;code&gt;sudo pfctl -e&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

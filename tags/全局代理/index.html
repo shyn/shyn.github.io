@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>全局代理 - Complex Standalone</title>
+  
+
+  <meta name="description" content="">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://dengx.in/images/abstract-1.jpg">
+  <meta name="twitter:title" content="全局代理">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:creator" content="@DeepWind">
+
+  
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="全局代理">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="http://dengx.in/tags/e585a8e5b180e4bba3e79086/">
+  <meta property="og:site_name" content="Complex Standalone">
+
+  <link rel="canonical" href="http://dengx.in/tags/e585a8e5b180e4bba3e79086/">
+  <link href="http://dengx.in/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/index.xml" rel="alternate" type="application/rss+xml" title="Complex Standalone" />
+  <link rel="author" href="http://plus.google.com/?rel=author">
+
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="cleartype" content="on">
+
+  <link href="http://dengx.in/css/main.min.css" rel="stylesheet">
+  <link href="http://dengx.in/css/patch.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+  
+  <script src="http://dengx.in/js/modernizr-2.6.2.custom.min.js"></script>
+  <script src="http://dengx.in/js/jquery-1.9.1.min.js"></script>
+  <script src="http://dengx.in/js/scripts.min.js"></script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-62308014-1');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body id="post-index">
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+  <button class="dl-trigger">Open Menu</button>
+  <ul class="dl-menu">
+    <li><a href="http://dengx.in">Home</a></li>
+    <li><a href="http://dengx.in/post/">Posts</a></li>
+    <li><a href="http://dengx.in/tags/">All Tags</a></li>
+    <li><a href="http://dengx.in/about/">About</a></li>
+
+
+  </ul>
+</nav>
+
+
+  <div class="entry-header">
+    <div class="header-title">
+      <div class="header-title-wrap">
+        <h1>Complex Standalone</h1>
+        <h2>全局代理<span class="length">1</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" role="main">
+    
+    <article class="hentry">
+      <header>
+        <div class="entry-meta">
+          <span class="entry-date date published updated"><time datetime="2015-07-02T00:18:42&#43;08:00">2015-07-02</time></span>
+          
+          •<span class="entry-comments"><a href="http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/#disqus_thread">Comment</a></span>
+          <span class="entry-reading-time pull-right"><i class="fa fa-clock-o"></i>Reading time ~1 minute</span>
+        </div>
+        <h1 class="entry-title"><a href="http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/" rel="bookmark" title="让OS X上的shadowsocks真正全局代理" itemprop="url">让OS X上的shadowsocks真正全局代理</a></h1>
+      </header>
+      <div class="entry-content">
+        <p>在Mac上我用的client是shadowsocks的Mac版，用起来的缺挺方便，有自动代理和全局两种模式，自带gfwlist，甚至还有公用账号免费使用，当然出于安全尽量不要用任何这种免费账号，浏览器用着是挺爽的，不过经常在shell环境下捣腾，难免出现各种莫名奇妙的连接中断，切换为「全局模式」仍然无法连接。</p>
+
+<p>解决方案一般推荐的都是设置shell的<code>http_proxy</code>变量，这自然是可以的：</p>
+
+<pre><code class="language-shell">export http_proxy=socks5://127.0.0.1:1080 https_proxy=socks5://127.0.0.1:1080
+</code></pre>
+
+<p>但是如果应用的网络连接不依赖系统代理，也不能设置，那只能在更底层来实现了，就像VPN做的那样，这样我们也省去了设置浏览器的繁琐。不过VPN对我来说太重了，而且还是得配置路由，好不让它跑全局。更不要说目前VPN也不太好使了。shadow-vpn 倒是轻量级高效能的，不过我还没实践。最先想到的是类似在Linux下设置iptables的方案，不需要安装额外的软件，不需要繁琐的配置，系统开销小，仅仅在底层对特定ip的流量进行转发，很灵活。然而OS X并不是Linux，它的内核Darwin是基于BSD的，虽然没有iptables，不过肯定也有类似实现的，它就是pf.</p>
+
+<p>一个简单的twitter流量转发到shadowsocks通道的实现：</p>
+
+<ol>
+<li>新建一个test.conf文件</li>
+<li>添加<code>rdr pass on etho inet proto tcp from any to twitter_ip_range -&gt; 127.0.0.1 port 1080</code></li>
+<li>加载转发规则：<code>sudo pfctl -vf test.conf</code></li>
+<li>开启pf（OS X默认没有开启）：<code>sudo pfctl -e</code></li>
+</ol>
+
+      </div>
+    </article>
+    
+  </div>
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>© 2014 DeepWind. Powered by <a href="http://hugo.spf13.com/">Hugo</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>. <a href="http://dengx.in/terms/">Privacy and Disclosure Policies</a>.</span>
+  </footer>
+</div>
+
+</body>
+</html>
