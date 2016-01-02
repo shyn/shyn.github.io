@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>小黑板</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <style type="text/css" media="screen">
       body {
         background-color: #f1f1f1;
@@ -34,30 +36,52 @@
         .logo-img-1x { display: none; }
         .logo-img-2x { display: inline-block; }
       }
-
-      #suggestions {
-        margin-top: 35px;
-        color: #ccc;
-      }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 0 10px;
-      }
       .ds-thread {
         padding-top: 4em;
       }
       img {
         width: 100%;
       }
-      textarea {
-        background: white;
+      .rainbow {
+      overflow: hidden;
       }
-
+      .rainbow > span {
+        display: block;
+        height: 2px;
+        width: 20%;
+        float: left;
+      }
+      .rainbow > span:nth-child(1) {
+    background-color: #3B8AE4;
+  }
+  
+  .rainbow > span:nth-child(2) {
+    background-color: #282C7D;
+  }
+  
+  .rainbow > span:nth-child(3) {
+    background-color: #D62721;
+  }
+  
+  .rainbow > span:nth-child(4) {
+    background-color: #FFB503;
+  }
+  .rainbow > span:nth-child(5) {
+    background-color: #1C862F;
+  }
+  .header a {
+    float:right;
+  }
     </style>
   <body>
-
+<div class="rainbow">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="header"><a href="/blog/">blog</a></div>
     <div class="container">
       <div class="board">
       <h1>元旦快乐</h1>
@@ -66,7 +90,7 @@
           <li>telegram: <a href="https://telegram.me/deepwind">@deepwind</a>（推荐）</li>
           <li>weixin: id3n9X</li>
       </ul>
-        
+      
      
 
       <p>
