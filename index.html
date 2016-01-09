@@ -1,107 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>小黑板</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
-    <script type="text/javascript">
-      var duoshuoQuery = {short_name:"whisperblog"};
+
+<head>
+    <meta charset="utf-8 ">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
+    <title>Complex Standalone</title>
+    <meta name="viewport " content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no ">
+    <script type="text/javascript ">
+    var duoshuoQuery = {
+        short_name: "whisperblog "
+    };
     </script>
-    <script type="text/javascript" async src='https://static.duoshuo.com/embed.js'></script>
-    <style type="text/css" media="screen">
-      body {
+    <script type="text/javascript " async src='https://static.duoshuo.com/embed.js'></script>
+    <style type="text/css " media="screen ">
+    body {
         background-color: #f1f1f1;
         margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
-
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-
-      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
-
-      ul { list-style: none; margin: 25px 0; padding: 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
-
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) {
-        .logo-img-1x { display: none; }
-        .logo-img-2x { display: inline-block; }
-      }
-      .ds-thread {
+        font-family: "Helvetica Neue ", Helvetica, Arial, sans-serif;
+    }
+    
+    .container {
+        margin: 50px auto 40px auto;
+        width: 600px;
+        text-align: center;
+    }
+    
+    a {
+        color: #4183c4;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    h1 {
+        width: 800px;
+        position: relative;
+        left: -100px;
+        letter-spacing: -1px;
+        line-height: 60px;
+        font-size: 60px;
+        font-weight: 100;
+        margin: 0px 0 50px 0;
+        text-shadow: 0 1px 0 #fff;
+    }
+    
+    p {
+        color: rgba(0, 0, 0, 0.5);
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 25px 0;
+        padding: 0;
+    }
+    
+    li {
+        display: table-cell;
+        font-weight: bold;
+        width: 1%;
+    }
+    
+    .logo {
+        display: inline-block;
+        margin-top: 35px;
+    }
+    
+    .logo-img-2x {
+        display: none;
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and ( min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and ( min-resolution: 192dpi),
+    only screen and ( min-resolution: 2dppx) {
+        .logo-img-1x {
+            display: none;
+        }
+        .logo-img-2x {
+            display: inline-block;
+        }
+    }
+    
+    .ds-thread {
         padding-top: 4em;
-      }
-      img {
+    }
+    
+    img {
         width: 100%;
-      }
-      .rainbow {
-      overflow: hidden;
-      }
-      .rainbow > span {
+    }
+    
+    .rainbow {
+        overflow: hidden;
+    }
+    
+    .rainbow > span {
         display: block;
         height: 2px;
         width: 20%;
         float: left;
-      }
-      .rainbow > span:nth-child(1) {
-    background-color: #3B8AE4;
-  }
-  
-  .rainbow > span:nth-child(2) {
-    background-color: #282C7D;
-  }
-  
-  .rainbow > span:nth-child(3) {
-    background-color: #D62721;
-  }
-  
-  .rainbow > span:nth-child(4) {
-    background-color: #FFB503;
-  }
-  .rainbow > span:nth-child(5) {
-    background-color: #1C862F;
-  }
-
+    }
+    
+    .rainbow > span:nth-child(1) {
+        background-color: #3B8AE4;
+    }
+    
+    .rainbow > span:nth-child(2) {
+        background-color: #282C7D;
+    }
+    
+    .rainbow > span:nth-child(3) {
+        background-color: #D62721;
+    }
+    
+    .rainbow > span:nth-child(4) {
+        background-color: #FFB503;
+    }
+    
+    .rainbow > span:nth-child(5) {
+        background-color: #1C862F;
+    }
     </style>
-  <body>
-<div class="rainbow">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
-    <div class="container">
-      <div class="board">
-      <h1>過必考逢</h1>
-      <p><strong>联系方式：</strong></p>
-      <ul>
-          <li>telegram: <a href="https://telegram.me/deepwind">@deepwind</a>（推荐）</li>
-          <li>weixin: id3n9X</li>
-      </ul>
-      
-     
+</head>
 
-      <p>
-      </p>
-      </div>
-
-
-  <div class="ds-thread" data-thread-key="board" data-title="小黑板" data-url="http://dengx.in"></div>
-
-
-
+<body>
+    <div class="rainbow ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </body>
+    <div class="container ">
+        <div class="board ">
+            <h1>過必考逢</h1>
+            <p><strong>联系方式：</strong></p>
+            <ul>
+                <li>telegram: <a href="https://telegram.me/deepwind ">@deepwind</a>（推荐）</li>
+                <li>weixin: id3n9X</li>
+            </ul>
+            <p>
+            </p>
+        </div>
+        <div class="ds-thread " data-thread-key="board " data-title="小黑板 " data-url="http://dengx.in "></div>
+    </div>
+</body>
+
 </html>
