@@ -13,20 +13,20 @@
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://dengx.in/images/abstract-1.jpg">
+  <meta name="twitter:image" content="http://localhost:1313//images/abstract-1.jpg">
   <meta name="twitter:title" content="Google语音识别API">
   <meta name="twitter:description" content="">
-  <meta name="twitter:creator" content="@DeepWind">
+  <meta name="twitter:creator" content="@">
 
   
   <meta property="og:locale" content="ja_JP">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Google语音识别API">
   <meta property="og:description" content="">
-  <meta property="og:url" content="http://dengx.in/post/google-speech-recognition-api/">
+  <meta property="og:url" content="http://localhost:1313/post/google-speech-recognition-api/">
   <meta property="og:site_name" content="Complex Standalone">
 
-  <link rel="canonical" href="http://dengx.in/post/google-speech-recognition-api/">
+  <link rel="canonical" href="http://localhost:1313/post/google-speech-recognition-api/">
   <link href="" rel="alternate" type="application/rss+xml" title="Complex Standalone" />
   <link rel="author" href="http://plus.google.com/?rel=author">
 
@@ -37,22 +37,15 @@
 
   <meta http-equiv="cleartype" content="on">
 
-  <link href="http://dengx.in/css/main.min.css" rel="stylesheet">
-  <link href="http://dengx.in/css/patch.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/main.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/patch.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
   
-  <script src="http://dengx.in/js/modernizr-2.6.2.custom.min.js"></script>
-  <script src="http://dengx.in/js/jquery-1.9.1.min.js"></script>
-  <script src="http://dengx.in/js/scripts.min.js"></script>
-  
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-62308014-1');
-    ga('send', 'pageview');
-  </script>
+  <script src="http://localhost:1313//js/modernizr-2.6.2.custom.min.js"></script>
+  <script src="http://localhost:1313//js/jquery-1.9.1.min.js"></script>
+  <script src="http://localhost:1313//js/scripts.min.js"></script>
+  <script src="http://localhost:1313//js/patch.js"></script>
+
   
 </head>
 
@@ -61,16 +54,28 @@
 <body id="post">
 
 
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-  <button class="dl-trigger">Open Menu</button>
-  <ul class="dl-menu">
-    <li><a href="http://dengx.in">主页</a></li>
-    <li><a href="http://dengx.in/post/">存档</a></li>
-    <li><a href="http://dengx.in/tags/">Tags</a></li>
-    <li><a href="http://dengx.in/about/">关于</a></li>
-
-
-  </ul>
+<header id="masthead" class="">
+  
+    <button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x" role="button" aria-label="Toggle Navigation" onclick="ga('send', 'event', 'sliding menu', 'click', 'button');"> <span class="lines"></span> <span class="label">Menu</span> </button>
+</header>
+<nav role="navigation" id="js-menu" class="sliding-menu-content">
+    <div class="inner-menu-wrap">
+        <button type="button" id="js-menu-close" class="sliding-menu-button-close lines-button x close" role="button" aria-label="Close Navigation"> <span class="lines"></span> </button>
+        <ul class="menu-item">
+            <li> <a href="/work/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Work');">Work</a> </li>
+            <li> <a href="/articles/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Blog');">Blog</a> </li>
+            <li> <a href="/about/" onclick="ga('send', 'event', 'sliding menu', 'click', 'About');">About</a> </li>
+        </ul>
+        <ul class="menu-item-footer">
+            <li> <a href="/mastering-paper/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Mastering Paper');">Mastering Paper</a> </li>
+            <li> <a href="/paperfaces/" onclick="ga('send', 'event', 'sliding menu', 'click', 'PaperFaces');">PaperFaces</a> </li>
+            <li> <a href="/support/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Sponsor &amp; Support');">Sponsor &amp; Support</a> </li>
+            <li> <a href="/contact/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Contact');">Contact</a> </li>
+            <li> <a href="/faqs/" onclick="ga('send', 'event', 'sliding menu', 'click', 'FAQs');">FAQs</a> </li>
+            <li> <a href="/sitemap/" onclick="ga('send', 'event', 'sliding menu', 'click', 'Sitemap');">Sitemap</a> </li>
+        </ul>
+        <div class="menu-item-social"> <a href="https://twitter.com/mmistakes" onclick="ga('send', 'event', 'sliding menu', 'click', 'Twitter follow');"><i class="fa fa-twitter-square"></i></a> <a href="https://github.com/mmistakes" onclick="ga('send', 'event', 'sliding menu', 'click', 'Github follow');"><i class="fa fa-github"></i></a> <a href="https://www.facebook.com/michaelrose" onclick="ga('send', 'event', 'sliding menu', 'click', 'Facebook follow');"><i class="fa fa-facebook-square"></i></a> <a href="http://instagram.com/mmistakes" onclick="ga('send', 'event', 'sliding menu', 'click', 'Instagram follow');"><i class="fa fa-instagram"></i></a> <a href="https://plus.google.com/+MichaelRoseDesign/posts" onclick="ga('send', 'event', 'sliding menu', 'click', 'Google+ follow');"><i class="fa fa-google-plus-square"></i></a> </div>
+    </div>
 </nav>
 
 
@@ -81,7 +86,7 @@
 
       <header class="header-title">
         <div class="header-title-wrap">
-          <h1 class="entry-title"><a href="http://dengx.in/post/google-speech-recognition-api/" rel="bookmark" title="Google语音识别API">Google语音识别API</a></h1>
+          <h1 class="entry-title"><a href="http://localhost:1313/post/google-speech-recognition-api/" rel="bookmark" title="Google语音识别API">Google语音识别API</a></h1>
           <h2><time datetime="2015-03-27T20:51:52&#43;08:00">2015-03-27</time></h2>
           <p class="entry-reading-time">
             <i class="fa fa-clock-o"></i>
@@ -109,22 +114,22 @@
           <span class="entry-tags">
             
             
-            <a href="http://dengx.in/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB" title="Pages tagged 语音识别" class="tag">语音识别</a>
+            <a href="http://localhost:1313//tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB" title="Pages tagged 语音识别" class="tag">语音识别</a>
             
-            <a href="http://dengx.in/tags/google" title="Pages tagged google" class="tag">google</a>
+            <a href="http://localhost:1313//tags/google" title="Pages tagged google" class="tag">google</a>
             
-            <a href="http://dengx.in/tags/api" title="Pages tagged api" class="tag">api</a>
+            <a href="http://localhost:1313//tags/api" title="Pages tagged api" class="tag">api</a>
             
           </span>
           
-          <span><a href="http://dengx.in/post/google-speech-recognition-api/" rel="bookmark" title="Google语音识别API">Google语音识别API</a> was published on <span class="entry-date date published updated"><time datetime="2015-03-27T20:51:52&#43;08:00">2015-03-27</time></span></span>
+    
           
           
           <div class="social-share">
             <ul class="socialcount socialcount-small inline-list like js grade-a activate-on-hover">
-              <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdengx.in%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-              <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdengx.in%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-              <li class="googleplus"><a href="https://plus.google.com/share?url=http%3a%2f%2fdengx.in%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+              <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+              <li class="googleplus"><a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fgoogle-speech-recognition-api%2f" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
             </ul>
           </div>
         </footer>
@@ -132,36 +137,18 @@
     </article>
 
     
-    <section id="disqus_thread">
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'complexstandalone';
-    var disqus_identifier = 'http:\/\/dengx.in\/post\/google-speech-recognition-api\/';
-    var disqus_title = 'Google语音识别API';
-    var disqus_url = 'http:\/\/dengx.in\/post\/google-speech-recognition-api\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
-    
 
     <div class="read-more">
       <div class="read-more-list">
         <div class="list-item">
           
-          <h4><a href="http://dengx.in/license/" title="Sample Link Post">license</a></h4>
+          <h4><a href="http://localhost:1313/license/" title="Sample Link Post">license</a></h4>
           <span>Published on 2015-04-19</span>
           
         </div>
         <div class="list-item">
           
-          <h4><a href="http://dengx.in/post/the-singularity-is-near-10-years/" title="A Post with a Video">奇点临近</a></h4>
+          <h4><a href="http://localhost:1313/post/the-singularity-is-near-10-years/" title="A Post with a Video">奇点临近</a></h4>
           <span>Published on 2015-03-24</span>
           
         </div>
@@ -172,11 +159,13 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <span>© 2014 DeepWind. Powered by <a href="http://hugo.spf13.com/">Hugo</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>. <a href="http://dengx.in/terms/">Privacy and Disclosure Policies</a>.</span>
+    <span>© 2014 . Powered by <a href="http://hugo.spf13.com/">Hugo</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>. <a href="http://localhost:1313//terms/">Privacy and Disclosure Policies</a>.</span>
   </footer>
 </div>
-<script src="http://dengx.in/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
-</body>
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

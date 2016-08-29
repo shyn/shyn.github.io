@@ -2,21 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>全局代理 on Complex Standalone</title>
-    <link>http://dengx.in/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
+    <link>http://localhost:1313/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
     <description>Recent content in 全局代理 on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
-    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
+    <language>zh-ch</language>
     <lastBuildDate>Thu, 02 Jul 2015 00:18:42 +0800</lastBuildDate>
-    <atom:link href="http://dengx.in/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>让OS X上的shadowsocks真正全局代理</title>
-      <link>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</link>
+      <link>http://localhost:1313/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</link>
       <pubDate>Thu, 02 Jul 2015 00:18:42 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</guid>
+      
+      <guid>http://localhost:1313/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</guid>
       <description>&lt;p&gt;在Mac上我用的client是shadowsocks的Mac版，用起来的缺挺方便，有自动代理和全局两种模式，自带gfwlist，甚至还有公用账号免费使用，当然出于安全尽量不要用任何这种免费账号，浏览器用着是挺爽的，不过经常在shell环境下捣腾，难免出现各种莫名奇妙的连接中断，切换为「全局模式」仍然无法连接。&lt;/p&gt;
 
 &lt;p&gt;解决方案一般推荐的都是设置shell的&lt;code&gt;http_proxy&lt;/code&gt;变量，这自然是可以的：&lt;/p&gt;

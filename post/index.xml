@@ -2,21 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Complex Standalone</title>
-    <link>http://dengx.in/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
-    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
+    <language>zh-ch</language>
     <lastBuildDate>Thu, 02 Jul 2015 00:18:42 +0800</lastBuildDate>
-    <atom:link href="http://dengx.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>獨立博客之癢</title>
-      <link>http://dengx.in/post/hello/</link>
+      <link>http://localhost:1313/post/hello/</link>
       <pubDate>Sun, 09 Nov 2014 20:38:27 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/hello/</guid>
+      
+      <guid>http://localhost:1313/post/hello/</guid>
       <description>&lt;p&gt;我上大學的時候才開始使用電腦，絕對是接觸電腦、互聯網很晚的鄉下人。但我對電腦的嚮往早就從童年時候就開始了。那個時候家裡也只有一台黑白電視機的，通過它，我認識到了外面的世界。電視裡的電腦、黑客，讓我覺得很酷。&lt;/p&gt;
 
 &lt;p&gt;（待續）&lt;/p&gt;
@@ -25,10 +23,10 @@
     
     <item>
       <title>被猫抓伤怎么办</title>
-      <link>http://dengx.in/post/my-cat-bite-me/</link>
+      <link>http://localhost:1313/post/my-cat-bite-me/</link>
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/my-cat-bite-me/</guid>
+      
+      <guid>http://localhost:1313/post/my-cat-bite-me/</guid>
       <description>&lt;p&gt;16天前，我开始养猫。&lt;/p&gt;
 
 &lt;p&gt;他叫萌萌，不到三个月，很快就和我熟了。然后打闹起来各种抓、咬。那个小爪子真是锋利啊，感觉他对自己的爪子特别骄傲，借着利抓爬上爬下的。晚上喜欢钻我被窝，但又不好好睡觉，继续挠我。&lt;/p&gt;
@@ -73,10 +71,10 @@
     
     <item>
       <title>内核恐慌第十三期</title>
-      <link>http://dengx.in/post/review-on-kernel-panic-13/</link>
+      <link>http://localhost:1313/post/review-on-kernel-panic-13/</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/review-on-kernel-panic-13/</guid>
+      
+      <guid>http://localhost:1313/post/review-on-kernel-panic-13/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://kernelpanic.fm/13&#34;&gt;內核恐慌第13期「并发与异步」&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;44&amp;rsquo;的时候终于进入正题了。&lt;br /&gt;
@@ -104,20 +102,20 @@
     
     <item>
       <title>奇点临近</title>
-      <link>http://dengx.in/post/the-singularity-is-near-10-years/</link>
+      <link>http://localhost:1313/post/the-singularity-is-near-10-years/</link>
       <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/the-singularity-is-near-10-years/</guid>
+      
+      <guid>http://localhost:1313/post/the-singularity-is-near-10-years/</guid>
       <description>&lt;p&gt;我对未来的技术充满憧憬，我是技术乐观主义者。但我对人类是悲观的。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Google语音识别API</title>
-      <link>http://dengx.in/post/google-speech-recognition-api/</link>
+      <link>http://localhost:1313/post/google-speech-recognition-api/</link>
       <pubDate>Fri, 27 Mar 2015 20:51:52 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/google-speech-recognition-api/</guid>
+      
+      <guid>http://localhost:1313/post/google-speech-recognition-api/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gillesdemey/google-speech-v2&#34;&gt;https://github.com/gillesdemey/google-speech-v2&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;curl -X POST \
@@ -135,10 +133,10 @@
     
     <item>
       <title>注册美区 iTunes 帐号</title>
-      <link>http://dengx.in/post/register-us-apple-id/</link>
+      <link>http://localhost:1313/post/register-us-apple-id/</link>
       <pubDate>Mon, 20 Apr 2015 22:57:44 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/register-us-apple-id/</guid>
+      
+      <guid>http://localhost:1313/post/register-us-apple-id/</guid>
       <description>&lt;p&gt;今天终于注册了美国区的苹果账号，原来这么简单，根本不需要美国信用卡（如果你不买东西的话），记录一下。&lt;/p&gt;
 
 &lt;p&gt;以下为步骤:&lt;/p&gt;
@@ -159,10 +157,10 @@
     
     <item>
       <title>OS X 开发环境搭建</title>
-      <link>http://dengx.in/post/notes-of-setting-up-dev-env-on-os-x/</link>
+      <link>http://localhost:1313/post/notes-of-setting-up-dev-env-on-os-x/</link>
       <pubDate>Sat, 30 May 2015 23:44:20 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/notes-of-setting-up-dev-env-on-os-x/</guid>
+      
+      <guid>http://localhost:1313/post/notes-of-setting-up-dev-env-on-os-x/</guid>
       <description>&lt;!-- 用了OS X两年了，用的最多的是chrome，基本上没怎么摸索系统，完全没有了当年用windows以及用黑苹果时的那个折腾劲，于是对OS X的理解还只停留在当年玩黑苹果时的程度。终于要走上developer之路了，必须认真来认识我所使用的环境。
  --&gt;
 
@@ -180,10 +178,10 @@
     
     <item>
       <title>text processing with python</title>
-      <link>http://dengx.in/post/text-processing-with-python/</link>
+      <link>http://localhost:1313/post/text-processing-with-python/</link>
       <pubDate>Thu, 11 Jun 2015 18:56:41 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/text-processing-with-python/</guid>
+      
+      <guid>http://localhost:1313/post/text-processing-with-python/</guid>
       <description>&lt;p&gt;网上下来txt小说，里面插满了广告，怎么办？文本处理程序里都有&lt;code&gt;查找/替换&lt;/code&gt;功能，但一般的不支持模式匹配，用vim当然是可行的。unix工具：grep|sed|awk|etc配合shell脚本进行批处理，基本上完美搞定。&lt;a href=&#34;http://www.slideshare.net/arhan/practical-unix-utilities-for-text-processing&#34;&gt;http://www.slideshare.net/arhan/practical-unix-utilities-for-text-processing&lt;/a&gt;&lt;a href=&#34;http://www.oreilly.com/openbook/utp/UnixTextProcessing.pdf&#34;&gt;http://www.oreilly.com/openbook/utp/UnixTextProcessing.pdf&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;前段时间用这些工具处理了抓下来的题库数据。&lt;/p&gt;
@@ -196,10 +194,10 @@
     
     <item>
       <title>让OS X上的shadowsocks真正全局代理</title>
-      <link>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</link>
+      <link>http://localhost:1313/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</link>
       <pubDate>Thu, 02 Jul 2015 00:18:42 +0800</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</guid>
+      
+      <guid>http://localhost:1313/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</guid>
       <description>&lt;p&gt;在Mac上我用的client是shadowsocks的Mac版，用起来的缺挺方便，有自动代理和全局两种模式，自带gfwlist，甚至还有公用账号免费使用，当然出于安全尽量不要用任何这种免费账号，浏览器用着是挺爽的，不过经常在shell环境下捣腾，难免出现各种莫名奇妙的连接中断，切换为「全局模式」仍然无法连接。&lt;/p&gt;
 
 &lt;p&gt;解决方案一般推荐的都是设置shell的&lt;code&gt;http_proxy&lt;/code&gt;变量，这自然是可以的：&lt;/p&gt;

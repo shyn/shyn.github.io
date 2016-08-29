@@ -2,21 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>猫 on Complex Standalone</title>
-    <link>http://dengx.in/tags/%E7%8C%AB/</link>
+    <link>http://localhost:1313/tags/%E7%8C%AB/</link>
     <description>Recent content in 猫 on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <managingEditor>theone@dengx.in (Deep Wind)</managingEditor>
-    <webMaster>theone@dengx.in (Deep Wind)</webMaster>
+    <language>zh-ch</language>
     <lastBuildDate>Sun, 28 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://dengx.in/tags/%E7%8C%AB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%8C%AB/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>被猫抓伤怎么办</title>
-      <link>http://dengx.in/post/my-cat-bite-me/</link>
+      <link>http://localhost:1313/post/my-cat-bite-me/</link>
       <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      <author>theone@dengx.in (Deep Wind)</author>
-      <guid>http://dengx.in/post/my-cat-bite-me/</guid>
+      
+      <guid>http://localhost:1313/post/my-cat-bite-me/</guid>
       <description>&lt;p&gt;16天前，我开始养猫。&lt;/p&gt;
 
 &lt;p&gt;他叫萌萌，不到三个月，很快就和我熟了。然后打闹起来各种抓、咬。那个小爪子真是锋利啊，感觉他对自己的爪子特别骄傲，借着利抓爬上爬下的。晚上喜欢钻我被窝，但又不好好睡觉，继续挠我。&lt;/p&gt;

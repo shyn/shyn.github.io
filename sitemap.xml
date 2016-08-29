@@ -2,68 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://dengx.in/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2015-07-05T23:34:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dengx.in/board/continus-learning-after-class/</loc>
+    <loc>http://localhost:1313/board/continus-learning-after-class/</loc>
     <lastmod>2015-07-05T23:34:13+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</loc>
+    <loc>http://localhost:1313/post/setup-pf-with-shadowsocks-to-bypass-gfw-systemwide-on-osx/</loc>
     <lastmod>2015-07-02T00:18:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/text-processing-with-python/</loc>
+    <loc>http://localhost:1313/post/text-processing-with-python/</loc>
     <lastmod>2015-06-11T18:56:41+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/notes-of-setting-up-dev-env-on-os-x/</loc>
+    <loc>http://localhost:1313/post/notes-of-setting-up-dev-env-on-os-x/</loc>
     <lastmod>2015-05-30T23:44:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/register-us-apple-id/</loc>
+    <loc>http://localhost:1313/post/register-us-apple-id/</loc>
     <lastmod>2015-04-20T22:57:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/license/</loc>
+    <loc>http://localhost:1313/license/</loc>
     <lastmod>2015-04-19T16:28:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/google-speech-recognition-api/</loc>
+    <loc>http://localhost:1313/post/google-speech-recognition-api/</loc>
     <lastmod>2015-03-27T20:51:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/the-singularity-is-near-10-years/</loc>
+    <loc>http://localhost:1313/post/the-singularity-is-near-10-years/</loc>
     <lastmod>2015-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/review-on-kernel-panic-13/</loc>
+    <loc>http://localhost:1313/post/review-on-kernel-panic-13/</loc>
     <lastmod>2015-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/my-cat-bite-me/</loc>
+    <loc>http://localhost:1313/post/my-cat-bite-me/</loc>
     <lastmod>2014-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/hello/</loc>
+    <loc>http://localhost:1313/post/hello/</loc>
     <lastmod>2014-11-09T20:38:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2014-11-09T20:36:21+08:00</lastmod>
   </url>
   
