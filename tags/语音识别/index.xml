@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>语音识别 on Complex Standalone</title>
+    <link>http://localhost:1313/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</link>
+    <description>Recent content in 语音识别 on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Fri, 27 Mar 2015 20:51:52 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google语音识别API</title>
+      <link>http://localhost:1313/post/google-speech-recognition-api/</link>
+      <pubDate>Fri, 27 Mar 2015 20:51:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/google-speech-recognition-api/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/gillesdemey/google-speech-v2&#34;&gt;https://github.com/gillesdemey/google-speech-v2&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;curl -X POST \
+--socks5-hostname 127.0.0.1:1080 \
+--data-binary @test.flac \
+--user-agent &#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36&#39; \
+--header &#39;Content-Type: audio/x-flac; rate=44100;&#39; \
+&#39;https://www.google.com/speech-api/v2/recognize?output=json&amp;amp;lang=zh-CN&amp;amp;key=YourKey&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如何申请key？请参照原链接。
+ google服务器应该有单文件大小限制，不知道为多少，反正我发送的「内核恐慌」的一期录音文件（45.8MB），返回了失败的结果， 本来想利用这个做成文本，提取干货的，免得要听一个多小时。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

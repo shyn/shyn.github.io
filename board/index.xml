@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boards on Complex Standalone</title>
+    <link>http://localhost:1313/board/</link>
+    <description>Recent content in Boards on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Sun, 05 Jul 2015 23:34:13 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/board/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>continus learning after class</title>
+      <link>http://localhost:1313/board/continus-learning-after-class/</link>
+      <pubDate>Sun, 05 Jul 2015 23:34:13 +0800</pubDate>
+      
+      <guid>http://localhost:1313/board/continus-learning-after-class/</guid>
+      <description>&lt;p&gt;这篇文章试着当教育学论文来写？
+先列个提纲：
+教育范式的发展
+互联网教育的现状和未来
+MOOC的优点和缺点，传统课堂的优缺点，二者如何互补
+中学现状，互联网教育在中学教育的机会与挑战&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
