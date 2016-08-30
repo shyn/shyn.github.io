@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digitalocean on Complex Standalone</title>
+    <link>http://dengx.in/tags/digitalocean/</link>
+    <description>Recent content in Digitalocean on Complex Standalone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Sat, 04 Jun 2016 20:18:35 +0800</lastBuildDate>
+    <atom:link href="http://dengx.in/tags/digitalocean/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>15 分钟创建安全的个人 shadowsocks 服务</title>
+      <link>http://dengx.in/post/setup-a-secure-shadowsocks-server-in-15-minutes/</link>
+      <pubDate>Sat, 04 Jun 2016 20:18:35 +0800</pubDate>
+      
+      <guid>http://dengx.in/post/setup-a-secure-shadowsocks-server-in-15-minutes/</guid>
+      <description>
+
+&lt;p&gt;这年头，科学上网是中国网民的必修课，然后并不是每个人都懂技术，虽然网上介绍这方面的很多，但是多数没有注重基本的安全设置，这样的话，就算小白学着你的方法一步一步配置成功了，但很快也会变成肉鸡吧，用户的所有上网行为也都暴露给了骇客，那样的话还不如自己买一个帐号放心。
+网上卖 shadowsocks 帐号的很多，各种论坛、群里都能见到这种二道贩子，但你觉得他安全吗？其实一台 5 美元的服务器就可以创建很多的帐号，服务器流量、带宽都有限，超售是很普遍的，这样服务质量不能得到保障。对于那些大型卖家，也不能放心，有的网站底部都显示已经在公安部备案了。况且大量用户的话，生意还能做下去，只有一个原因。为了让自己翻的放心一些，要么去买那些比较贵的、可靠的服务商（可能你也不知道有哪些），那么呢，其实你可以自己买服务器搭建，一点都没有想象中的那么麻烦！而且一台服务器可以设置很多帐号，可以多人合用，流量都是绝对够用的，完全不用考虑。你只需要一个月花 5 美元，已经现在别要害怕、别怕麻烦、耐心的最好设置就可以了！&lt;/p&gt;
+
+&lt;h2 id=&#34;购买-digitalocean-服务器&#34;&gt;购买 digitalocean 服务器&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

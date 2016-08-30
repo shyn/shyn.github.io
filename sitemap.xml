@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://dengx.in/</loc>
+    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/setup-a-secure-shadowsocks-server-in-15-minutes/</loc>
+    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/nginx.conf/</loc>
+    <lastmod>2015-08-30T22:22:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/vim101/</loc>
+    <lastmod>2015-08-13T01:04:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/my-cat-bite-me/</loc>
+    <lastmod>2014-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>
