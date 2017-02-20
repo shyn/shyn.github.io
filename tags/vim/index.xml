@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on Complex Standalone</title>
-    <link>http://dengx.in/tags/vim/</link>
+    <link>http://dengx.in/tags/vim/index.xml</link>
     <description>Recent content in Vim on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ch</language>
-    <lastBuildDate>Thu, 13 Aug 2015 01:04:42 +0800</lastBuildDate>
     <atom:link href="http://dengx.in/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

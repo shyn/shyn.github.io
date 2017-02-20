@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ops on Complex Standalone</title>
-    <link>http://dengx.in/categories/ops/</link>
+    <link>http://dengx.in/categories/ops/index.xml</link>
     <description>Recent content in Ops on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ch</language>
-    <lastBuildDate>Sun, 30 Aug 2015 22:22:11 +0800</lastBuildDate>
     <atom:link href="http://dengx.in/categories/ops/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
