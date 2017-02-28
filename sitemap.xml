@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://dengx.in/post/deploy-google-bbr/</loc>
+    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dengx.in/resume/</loc>
     <lastmod>2017-02-20T20:10:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/post/use-docker/</loc>
+    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
   </url>
   
   <url>
@@ -27,19 +37,37 @@
   </url>
   
   <url>
+    <loc>http://dengx.in/tags/bbr/</loc>
+    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://dengx.in/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dengx.in/</loc>
-    <lastmod>2017-02-20T20:10:18+08:00</lastmod>
+    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/tags/devops/</loc>
+    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dengx.in/tags/digitalocean/</loc>
     <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://dengx.in/tags/docker/</loc>
+    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,7 +85,7 @@
   
   <url>
     <loc>http://dengx.in/post/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,7 +108,7 @@
   
   <url>
     <loc>http://dengx.in/categories/tech/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   

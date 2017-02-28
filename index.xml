@@ -6,8 +6,79 @@
     <description>Recent content on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ch</language>
-    <lastBuildDate>Mon, 20 Feb 2017 20:10:18 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 Feb 2017 09:20:06 +0800</lastBuildDate>
     <atom:link href="http://dengx.in/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>部署 google bbr</title>
+      <link>http://dengx.in/post/deploy-google-bbr/</link>
+      <pubDate>Tue, 28 Feb 2017 09:20:06 +0800</pubDate>
+      
+      <guid>http://dengx.in/post/deploy-google-bbr/</guid>
+      <description>
+
+&lt;p&gt;试了一下 google 的 bbr TCP 拥堵算法，好像很厉害，速度快了不少，建议不要再使用 kcp 等暴力发包的加速方案，会让网络大环境变差。bbr 是单边加速，仅需设置一下服务器端即可。&lt;/p&gt;
+
+&lt;p&gt;其实 bbr 已经加入 4.9 以上的 linux 内核，所以无非是升级到最新内核，设置一下默认使用 bbr 就可以了。&lt;/p&gt;
+
+&lt;p&gt;下面以 vultr 的 CentOS 7 x64 的实例来示范，其他发行版主要是升级内核方式不同。&lt;/p&gt;
+
+&lt;h2 id=&#34;一-升级内核&#34;&gt;一、升级内核&lt;/h2&gt;
+
+&lt;p&gt;查看当前内核版本：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;uname -r
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;输出结果可能是这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;3.10.0-514.2.2.el7.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;表明当前内核版本 3.10&lt;/p&gt;
+
+&lt;p&gt;shell 中输入一下指令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+sudo yum --enablerepo&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;elrepo-kernel install kernel-ml -y
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;检查一下是否升级成功：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;rpm -qa &lt;span style=&#34;color: #f8f8f2&#34;&gt;|&lt;/span&gt; grep kernel
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;结果：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;kernel-ml-4.9.0-1.el7.elrepo.x86_64
+kernel-3.10.0-514.el7.x86_64
+kernel-tools-libs-3.10.0-514.2.2.el7.x86_64
+kernel-tools-3.10.0-514.2.2.el7.x86_64
+kernel-3.10.0-514.2.2.el7.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;有第一行的 4.9.0 甚至 4.10 就说明成功了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;grub2-set-default 0
+reboot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;二-开启-bbr&#34;&gt;二、开启 bbr&lt;/h2&gt;
+
+&lt;p&gt;查看一下内核：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;uname -r
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;查看一下 bbr 又没有：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;sudo sysctl net.ipv4.tcp_available_congestion_control
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;输出应该是这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;net.ipv4.tcp_available_congestion_control &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; bbr cubic reno
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;设置一下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;sudo sysctl net.ipv4.tcp_congestion_control&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;bbr
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这样应该就 OK 啦！可以享受 google 黑科技了。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Resume</title>
@@ -75,6 +146,26 @@
 &lt;h2 id=&#34;个人描述&#34;&gt;个人描述&lt;/h2&gt;
 
 &lt;p&gt;热爱编程，喜欢思考，喜欢 geek、nerd 相关事物，喜欢尝试各种新技术，良好的自学能力，善于归纳总结，把握事物本质，敬畏于各个领域的各种 pattern，希望挑战自己，做全职开发。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>拥抱 Docker</title>
+      <link>http://dengx.in/post/use-docker/</link>
+      <pubDate>Tue, 23 Aug 2016 10:01:08 +0800</pubDate>
+      
+      <guid>http://dengx.in/post/use-docker/</guid>
+      <description>
+
+&lt;p&gt;一直以来，服务器的部署都很让我头疼，每次都要进行一堆配置，繁琐重复的劳动太多，自己时间有限，加上到 VPS 的网络不是那么稳定，很多自动化部署和运维的工具都没尝试，不过现在看来也没有什么必要了，因为知道了 Docker。&lt;/p&gt;
+
+&lt;p&gt;真正想用进一步了解和使用它其实是听了&lt;/p&gt;
+
+&lt;h1 id=&#34;安装-docker&#34;&gt;安装 Docker&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docker.com&#34;&gt;Docker 官方文档&lt;/a&gt;详尽地列出了各个系统下的 Docker 安装说明，不多说了。&lt;/p&gt;
+
+&lt;p&gt;补充一下： Windows/Mac 用户，推荐安装 Docker for Window/Mac，而不是 Docker Toolbox。前者可以直接利用宿主系统的虚拟化机制，拥有更好的性能；后者需要借助 VirtualBox 运行的 Linux 虚拟机，你可能会很不爽。&lt;/p&gt;
 </description>
     </item>
     
