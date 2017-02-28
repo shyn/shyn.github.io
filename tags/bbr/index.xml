@@ -73,6 +73,7 @@ reboot
 
 &lt;p&gt;设置一下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;sudo sysctl net.ipv4.tcp_congestion_control&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;bbr
+sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;fq
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;这样应该就 OK 啦！可以享受 google 黑科技了。&lt;/p&gt;

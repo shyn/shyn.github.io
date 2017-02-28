@@ -100,6 +100,7 @@ reboot
 
 <p>设置一下：</p>
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo sysctl net.ipv4.tcp_congestion_control<span style="color: #f92672">=</span>bbr
+sudo sysctl net.core.default_qdisc<span style="color: #f92672">=</span>fq
 </pre></div>
 
 <p>这样应该就 OK 啦！可以享受 google 黑科技了。</p>
