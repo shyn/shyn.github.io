@@ -53,7 +53,8 @@ kernel-tools-3.10.0-514.2.2.el7.x86_64
 kernel-3.10.0-514.2.2.el7.x86_64
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;有第一行的 4.9.0 甚至 4.10 就说明成功了。&lt;/p&gt;
+&lt;p&gt;有第一行的 4.9.0 甚至 4.10 就说明成功了。
+设置一下，重启。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;grub2-set-default 0
 reboot
 &lt;/pre&gt;&lt;/div&gt;
@@ -64,7 +65,7 @@ reboot
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;uname -r
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;查看一下 bbr 又没有：&lt;/p&gt;
+&lt;p&gt;查看一下 bbr 有没有：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;sudo sysctl net.ipv4.tcp_available_congestion_control
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -83,10 +84,10 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
     
     <item>
       <title>Resume</title>
-      <link>http://dengx.in/resume/</link>
+      <link>http://dengx.in/resume-v1/</link>
       <pubDate>Mon, 20 Feb 2017 20:10:18 +0800</pubDate>
       
-      <guid>http://dengx.in/resume/</guid>
+      <guid>http://dengx.in/resume-v1/</guid>
       <description>
 
 &lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
@@ -147,6 +148,84 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 &lt;h2 id=&#34;个人描述&#34;&gt;个人描述&lt;/h2&gt;
 
 &lt;p&gt;热爱编程，喜欢思考，喜欢 geek、nerd 相关事物，喜欢尝试各种新技术，良好的自学能力，善于归纳总结，把握事物本质，敬畏于各个领域的各种 pattern，希望挑战自己，做全职开发。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>http://dengx.in/resume/</link>
+      <pubDate>Mon, 20 Feb 2017 20:10:18 +0800</pubDate>
+      
+      <guid>http://dengx.in/resume/</guid>
+      <description>
+
+&lt;h2 id=&#34;基本信息&#34;&gt;基本信息&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;姓名：邓新&lt;/li&gt;
+&lt;li&gt;性别：男&lt;/li&gt;
+&lt;li&gt;出生：1989 年 10 月&lt;/li&gt;
+&lt;li&gt;邮箱：deepwind@protonmail.com, theone.deng@gmail.com&lt;/li&gt;
+&lt;li&gt;twitter: @iDXYe&lt;/li&gt;
+&lt;li&gt;电话: 18671171025&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;求职意向&#34;&gt;求职意向&lt;/h2&gt;
+
+&lt;p&gt;python 开发&lt;/p&gt;
+
+&lt;h2 id=&#34;自我描述&#34;&gt;自我描述&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;熟悉常见技术的基本原理，热爱互联网和技术，喜欢思考；&lt;/li&gt;
+&lt;li&gt;喜欢 geek、nerd 相关事物，喜欢尝试各种新技术；&lt;/li&gt;
+&lt;li&gt;善于归纳总结，把握事物本质，敬畏于各个领域的各种 pattern；&lt;/li&gt;
+&lt;li&gt;能熟练使用 python 解决问题；&lt;/li&gt;
+&lt;li&gt;熟悉 MVC、RESTful，日常高效使用 Mac 工作，熟悉 linux 的使用和维护，熟悉 git、vim，熟练使用常见数据库如 MySQL、Mongodb.&lt;/li&gt;
+&lt;li&gt;熟悉 C 和 go 语言的程序；&lt;/li&gt;
+&lt;li&gt;良好的编程基础和数理知识，学习能力强。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;教育经历&#34;&gt;教育经历&lt;/h2&gt;
+
+&lt;p&gt;2008～2012 北京师范大学物理学系&lt;/p&gt;
+
+&lt;h2 id=&#34;工作经验&#34;&gt;工作经验&lt;/h2&gt;
+
+&lt;p&gt;2012 年 8 月 ~ 2017 年 1 月  东风高级中学（市直属示范高中）
+* 进行高中物理教学，班级管理；
+* 开发教学辅助系统，建立了内部使用的题库、组卷工具；
+* 学校的免费 IT guy&lt;/p&gt;
+
+&lt;h2 id=&#34;项目经验&#34;&gt;项目经验&lt;/h2&gt;
+
+&lt;h3 id=&#34;题库系统&#34;&gt;题库系统&lt;/h3&gt;
+
+&lt;p&gt;内容：&lt;/p&gt;
+
+&lt;p&gt;使用 bootstrap、flask 和 mongodb 搭建系统，使用 redis 做缓存，使用 elasticsearch 做了搜索，gunicorn 做应用服务器，nginx 反向代理，celery 做任务调度。系统实现了基于题目的增删改查，标签聚合，组卷，开发了推荐、相似题目、智能组卷功能。实现了相似题目算法来进行去重和高效发现相似题目。设计了 RESTful 的 API 满足未来的移动 App 开发等需求。&lt;/p&gt;
+
+&lt;p&gt;目前系统有 10 万条目，均由 python 脚本爬取。&lt;/p&gt;
+
+&lt;p&gt;收获：迅速使用常用技术栈完成业务，学会了如何设计产品，如何进行迭代开发，使用 git 进行项目管理。&lt;/p&gt;
+
+&lt;h2 id=&#34;技能&#34;&gt;技能&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;精通 python，能熟练使用 python 解决问题，熟悉常用系统库及第三方库的使用&lt;/li&gt;
+&lt;li&gt;熟悉 flask 的使用，能运用 flask 快速完成常见业务&lt;/li&gt;
+&lt;li&gt;使用 python 设计基本爬虫收集信息，能使用 scrapy 框架编写复杂分布式爬虫&lt;/li&gt;
+&lt;li&gt;使用 python 进行数据分析，能应用基本的机器学习方法进行数据挖掘&lt;/li&gt;
+&lt;li&gt;熟悉 golang, 能教流畅读写代码&lt;/li&gt;
+&lt;li&gt;熟悉常用数据库如 mysql、mongodb、redis 的基本使用和维护&lt;/li&gt;
+&lt;li&gt;熟悉 HTTP 的基本原理，可以熟练实现 RESTful API&lt;/li&gt;
+&lt;li&gt;熟悉 HTML/CSS/JavaScript，经常捣腾各种眼花缭乱的 web 新技术&lt;/li&gt;
+&lt;li&gt;非常熟练的使用 google、官方文档、stackoverflow、V2EX、知乎来解决问题&lt;/li&gt;
+&lt;li&gt;良好的数理基础，熟悉微积分、数理统计、线性代数、数学物理方法的基本应用&lt;/li&gt;
+&lt;li&gt;熟悉 linux 环境，能进行基本日常使用和维护&lt;/li&gt;
+&lt;li&gt;熟悉 git、vim 的日常使用&lt;/li&gt;
+&lt;li&gt;英语六级，熟练阅读英文资料&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
