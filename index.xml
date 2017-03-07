@@ -192,27 +192,39 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 
 &lt;h2 id=&#34;工作经验&#34;&gt;工作经验&lt;/h2&gt;
 
-&lt;p&gt;2012 年 8 月 ~ 2017 年 1 月  东风高级中学（市直属示范高中）
-* 进行高中物理教学，班级管理；
-* 开发教学辅助系统，建立了内部使用的题库、组卷工具；
-* 学校的免费 IT guy&lt;/p&gt;
+&lt;p&gt;2012 年 8 月 ~ 2017 年 1 月  东风高级中学（市直属示范高中）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;进行高中物理教学，班级管理；&lt;/li&gt;
+&lt;li&gt;开发教学辅助系统，建立了内部使用的题库、组卷工具；&lt;/li&gt;
+&lt;li&gt;学校的免费 IT guy&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;项目经验&#34;&gt;项目经验&lt;/h2&gt;
 
-&lt;h3 id=&#34;题库系统&#34;&gt;题库系统&lt;/h3&gt;
+&lt;h3 id=&#34;题库系统-个人全栈开发&#34;&gt;题库系统（个人全栈开发）&lt;/h3&gt;
 
 &lt;p&gt;内容：&lt;/p&gt;
 
-&lt;p&gt;使用 bootstrap、flask 和 mongodb 搭建系统，使用 redis 做缓存，使用 elasticsearch 做了搜索，gunicorn 做应用服务器，nginx 反向代理，celery 做任务调度。系统实现了基于题目的增删改查，标签聚合，组卷，开发了推荐、相似题目、智能组卷功能。实现了相似题目算法来进行去重和高效发现相似题目。设计了 RESTful 的 API 满足未来的移动 App 开发等需求。&lt;/p&gt;
-
-&lt;p&gt;目前系统有 10 万条目，均由 python 脚本爬取。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 bootstrap 设计了前端页面，利用 cookie 和 Web Storage 配合后端设计了试题篮；&lt;/li&gt;
+&lt;li&gt;后端主要使用 flask 开发，使用 mongodb 做数据持久化存储；&lt;/li&gt;
+&lt;li&gt;使用 elasticsearch 做了题目的全文搜索功能；&lt;/li&gt;
+&lt;li&gt;解决了几十万小图片的服务器端存储问题；&lt;/li&gt;
+&lt;li&gt;基本的性能优化，如创建 mongodb 索引，数据分页，gunicorn 做应用服务器并开启异步模式，nginx 反向代理和静态资源托管，reids 做内存缓存和消息存储，Celery 做任务调度；&lt;/li&gt;
+&lt;li&gt;除了基于题目的增删改查，还是实现了标签聚合，组卷功能；&lt;/li&gt;
+&lt;li&gt;使用结巴分词、朴素贝叶斯分类和感知哈希算法实现了「相似题目」来进行去重和高效发现相似题目；&lt;/li&gt;
+&lt;li&gt;基于相似题目开发了基本的推荐系统和智能组卷功能；&lt;/li&gt;
+&lt;li&gt;设计了 RESTful 的 API，吞吐 json 数据， 满足未来的移动 App 开发等需求；&lt;/li&gt;
+&lt;li&gt;使用 python 脚本爬取 10 万条目，作为初始数据。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;收获：迅速使用常用技术栈完成业务，学会了如何设计产品，如何进行迭代开发，使用 git 进行项目管理。&lt;/p&gt;
 
 &lt;h2 id=&#34;技能&#34;&gt;技能&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;精通 python，能熟练使用 python 解决问题，熟悉常用系统库及第三方库的使用&lt;/li&gt;
+&lt;li&gt;熟练使用 python 解决问题，熟悉常用系统库及第三方库的使用&lt;/li&gt;
 &lt;li&gt;熟悉 flask 的使用，能运用 flask 快速完成常见业务&lt;/li&gt;
 &lt;li&gt;使用 python 设计基本爬虫收集信息，能使用 scrapy 框架编写复杂分布式爬虫&lt;/li&gt;
 &lt;li&gt;使用 python 进行数据分析，能应用基本的机器学习方法进行数据挖掘&lt;/li&gt;
