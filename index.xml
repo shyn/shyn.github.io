@@ -192,7 +192,18 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 
 &lt;h2 id=&#34;工作经验&#34;&gt;工作经验&lt;/h2&gt;
 
-&lt;p&gt;2012 年 8 月 ~ 2017 年 1 月  东风高级中学（市直属示范高中）&lt;/p&gt;
+&lt;p&gt;2016 年 2 月 ~ 2017 年 2 月  颂大教育科技&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;从事题库系统研发&lt;/li&gt;
+&lt;li&gt;从事内部员工管理系统的设计和维护&lt;/li&gt;
+&lt;li&gt;使用爬虫技术，进行网络资源的采集和整理&lt;/li&gt;
+&lt;li&gt;开发移动端 app 的数据借口&lt;/li&gt;
+&lt;li&gt;协助运维的工作，优化运维和部署&lt;/li&gt;
+&lt;li&gt;微课系统视频上传、转码和存储功能的开发&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2012 年 8 月 ~ 2016 年 1 月  东风高级中学（市直属示范高中）&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;进行高中物理教学，班级管理；&lt;/li&gt;
@@ -202,13 +213,14 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 
 &lt;h2 id=&#34;项目经验&#34;&gt;项目经验&lt;/h2&gt;
 
-&lt;h3 id=&#34;题库系统-个人全栈开发&#34;&gt;题库系统（个人全栈开发）&lt;/h3&gt;
+&lt;h3 id=&#34;题库系统-核心开发者&#34;&gt;题库系统（核心开发者）&lt;/h3&gt;
 
 &lt;p&gt;内容：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;使用 bootstrap 设计了前端页面，利用 cookie 和 Web Storage 配合后端设计了试题篮；&lt;/li&gt;
-&lt;li&gt;后端主要使用 flask 开发，使用 mongodb 做数据持久化存储；&lt;/li&gt;
+&lt;li&gt;使用 bootstrap 和 vuejs 写了前端，利用 cookie 和 Web Storage 配合后端设计了试题篮；&lt;/li&gt;
+&lt;li&gt;后端主要使用 flask 开发，独立编写所有相关模块，系统有着良好的结构；&lt;/li&gt;
+&lt;li&gt;使用 mongodb 做数据持久化存储；&lt;/li&gt;
 &lt;li&gt;使用 elasticsearch 做了题目的全文搜索功能；&lt;/li&gt;
 &lt;li&gt;解决了几十万小图片的服务器端存储问题；&lt;/li&gt;
 &lt;li&gt;基本的性能优化，如创建 mongodb 索引，数据分页，gunicorn 做应用服务器并开启异步模式，nginx 反向代理和静态资源托管，reids 做内存缓存和消息存储，Celery 做任务调度；&lt;/li&gt;
@@ -216,10 +228,31 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 &lt;li&gt;使用结巴分词、朴素贝叶斯分类和感知哈希算法实现了「相似题目」来进行去重和高效发现相似题目；&lt;/li&gt;
 &lt;li&gt;基于相似题目开发了基本的推荐系统和智能组卷功能；&lt;/li&gt;
 &lt;li&gt;设计了 RESTful 的 API，吞吐 json 数据， 满足未来的移动 App 开发等需求；&lt;/li&gt;
-&lt;li&gt;使用 python 脚本爬取 10 万条目，作为初始数据。&lt;/li&gt;
+&lt;li&gt;使用 python 编写爬虫，持续抓取题目，去重后，目前有百万数据&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;收获：迅速使用常用技术栈完成业务，学会了如何设计产品，如何进行迭代开发，使用 git 进行项目管理。&lt;/p&gt;
+
+&lt;h3 id=&#34;python-微框架-cup&#34;&gt;python 微框架 —— Cup&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;完全使用 python 基础库编写的小型 web-framework&lt;/li&gt;
+&lt;li&gt;实现了路由、模板功能，也可以使用第三方模板引擎如 mako、jinja2&lt;/li&gt;
+&lt;li&gt;拥有表单处理、文件上传等完整功能&lt;/li&gt;
+&lt;li&gt;内置 WSGI 兼容的小型 Web 服务器&lt;/li&gt;
+&lt;li&gt;基于 python3 asynio 开发，有着不错的性能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;分布式爬虫&#34;&gt;分布式爬虫&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;基于 pyspider 定制的分布式爬虫，添加代理池、cookie池功能&lt;/li&gt;
+&lt;li&gt;使用 redis 集群作为分布式缓存和消息队列&lt;/li&gt;
+&lt;li&gt;可以使用 web 界面调试，方便快捷&lt;/li&gt;
+&lt;li&gt;结果直接存入 mongodb 存储集群&lt;/li&gt;
+&lt;li&gt;使用数据库进行有效去重&lt;/li&gt;
+&lt;li&gt;可持续爬取，永不下线&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;技能&#34;&gt;技能&lt;/h2&gt;
 
@@ -231,11 +264,11 @@ sudo sysctl net.core.default_qdisc&lt;span style=&#34;color: #f92672&#34;&gt;=&l
 &lt;li&gt;熟悉 golang, 能教流畅读写代码&lt;/li&gt;
 &lt;li&gt;熟悉常用数据库如 mysql、mongodb、redis 的基本使用和维护&lt;/li&gt;
 &lt;li&gt;熟悉 HTTP 的基本原理，可以熟练实现 RESTful API&lt;/li&gt;
-&lt;li&gt;熟悉 HTML/CSS/JavaScript，经常捣腾各种眼花缭乱的 web 新技术&lt;/li&gt;
+&lt;li&gt;熟练 HTML/CSS/JavaScript，熟练使用 Jquery、Vuejs，熟练使用前端工具如 Webpack、Babel&lt;/li&gt;
 &lt;li&gt;非常熟练的使用 google、官方文档、stackoverflow、V2EX、知乎来解决问题&lt;/li&gt;
 &lt;li&gt;良好的数理基础，熟悉微积分、数理统计、线性代数、数学物理方法的基本应用&lt;/li&gt;
 &lt;li&gt;熟悉 linux 环境，能进行基本日常使用和维护&lt;/li&gt;
-&lt;li&gt;熟悉 git、vim 的日常使用&lt;/li&gt;
+&lt;li&gt;熟练使用 git、vim&lt;/li&gt;
 &lt;li&gt;英语六级，熟练阅读英文资料&lt;/li&gt;
 &lt;/ul&gt;
 </description>
