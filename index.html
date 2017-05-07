@@ -99,12 +99,18 @@ reboot
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span>net.ipv4.tcp_available_congestion_control <span style="color: #f92672">=</span> bbr cubic reno
 </pre></div>
 
+<p>如果没有的话，那就是内核模块没有加载，加载一下即可：</p>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span>lsmod <span style="color: #f8f8f2">|</span> grep bbr  <span style="color: #75715e"># output should be tcp_bbr</span>
+sudo modprobe tcp_bbr
+</pre></div>
+
 <p>设置一下：</p>
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo sysctl net.ipv4.tcp_congestion_control<span style="color: #f92672">=</span>bbr
 sudo sysctl net.core.default_qdisc<span style="color: #f92672">=</span>fq
 </pre></div>
 
-<p>这样应该就 OK 啦！可以享受 google 黑科技了。</p>
+<p>(不要忘了设置 qdisc)
+这样应该就 OK 啦！可以享受 google 黑科技了。</p>
 
 	</div>
 </article>
