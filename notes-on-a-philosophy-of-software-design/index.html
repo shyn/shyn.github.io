@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.62.1" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+
+
+
+<title> - Complex Standalone</title>
+
+<meta name="author" content="@deepwind" />
+<meta name="description" content="https://www.youtube.com/watch?v=bmSAYlu0NcY
+软件行业已经 80 年了？
+software design never teached anywhere.
+作者的斯坦福课程（cs190）和他的书。
+10x programmer skills
+Talent is overrated!
+Decomping (如何拆分、解偶)
+It&#39;s all about practice. Trial and error.
+教育问题。
+作者适合教这些内容的理由：
+  Personally he love programming.
+It&#39;s really one of top two or three things he live for. (family, programming, golf~&hellip;)
+These things drive his life.
+  code 5000 lines a year.
+  如何做的，小班教学（&lt;20)，从零写大project，code review，不断改进。
+给了一些原则：
+  classes should be deep
+Paper from David Parnas about information hiding.
+不要纠结于短小的函数或类，关键是抽象，抽象要深。
+  Define Errors Out of Existence
+  Tactical vs Strategic (Mindset)
+  " />
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="https://www.youtube.com/watch?v=bmSAYlu0NcY
+软件行业已经 80 年了？
+software design never teached anywhere.
+作者的斯坦福课程（cs190）和他的书。
+10x programmer skills
+Talent is overrated!
+Decomping (如何拆分、解偶)
+It&#39;s all about practice. Trial and error.
+教育问题。
+作者适合教这些内容的理由：
+  Personally he love programming.
+It&#39;s really one of top two or three things he live for. (family, programming, golf~&hellip;)
+These things drive his life.
+  code 5000 lines a year.
+  如何做的，小班教学（&lt;20)，从零写大project，code review，不断改进。
+给了一些原则：
+  classes should be deep
+Paper from David Parnas about information hiding.
+不要纠结于短小的函数或类，关键是抽象，抽象要深。
+  Define Errors Out of Existence
+  Tactical vs Strategic (Mindset)
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://deepwind.one/notes-on-a-philosophy-of-software-design/" />
+<meta property="og:image" content="https://deepwind.one/img/og.png"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://deepwind.one/img/og.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="https://www.youtube.com/watch?v=bmSAYlu0NcY
+软件行业已经 80 年了？
+software design never teached anywhere.
+作者的斯坦福课程（cs190）和他的书。
+10x programmer skills
+Talent is overrated!
+Decomping (如何拆分、解偶)
+It&#39;s all about practice. Trial and error.
+教育问题。
+作者适合教这些内容的理由：
+  Personally he love programming.
+It&#39;s really one of top two or three things he live for. (family, programming, golf~&hellip;)
+These things drive his life.
+  code 5000 lines a year.
+  如何做的，小班教学（&lt;20)，从零写大project，code review，不断改进。
+给了一些原则：
+  classes should be deep
+Paper from David Parnas about information hiding.
+不要纠结于短小的函数或类，关键是抽象，抽象要深。
+  Define Errors Out of Existence
+  Tactical vs Strategic (Mindset)
+  "/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://deepwind.one/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="https://deepwind.one">Complex Standalone</a>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="https://deepwind.one/notes-on-a-philosophy-of-software-design/"></a>
+    </h4>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;0001-01-01</time><span><i class="fas fa-file-alt"></i>&nbsp;80 字</span><span><i class="fas fa-tag"></i>&nbsp;无标签</span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p><a href="https://www.youtube.com/watch?v=bmSAYlu0NcY">https://www.youtube.com/watch?v=bmSAYlu0NcY</a></p>
+<p>软件行业已经 80 年了？</p>
+<p>software design never teached anywhere.</p>
+<p>作者的斯坦福课程（cs190）和他的书。</p>
+<p>10x programmer skills</p>
+<p>Talent is overrated!</p>
+<p>Decomping (如何拆分、解偶)</p>
+<p>It's all about practice. Trial and error.</p>
+<p>教育问题。</p>
+<p>作者适合教这些内容的理由：</p>
+<ol>
+<li>
+<p>Personally he love programming.</p>
+<p>It's really one of top two or three things he live for. (family, programming, golf~&hellip;)</p>
+<p>These things drive his life.</p>
+</li>
+<li>
+<p>code 5000 lines a year.</p>
+</li>
+</ol>
+<p>如何做的，小班教学（&lt;20)，从零写大project，code review，不断改进。</p>
+<p>给了一些原则：</p>
+<ul>
+<li>
+<p>classes should be deep</p>
+<p>Paper from David Parnas about information hiding.</p>
+<p>不要纠结于短小的函数或类，关键是抽象，抽象要深。</p>
+</li>
+<li>
+<p>Define Errors Out of Existence</p>
+</li>
+<li>
+<p>Tactical vs Strategic (Mindset)</p>
+</li>
+</ul>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>除特殊注明部分，本站内容采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a> 进行许可。</p>
+    </blockquote>
+</div>
+
+
+
+
+<script data-isso="//onepiece.deepwind.one/"
+        src="//onepiece.deepwind.one/js/embed.min.js"></script>
+<section id="isso-thread"></section>
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>目录</h5>
+    <nav id="TableOfContents"></nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>页面</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/about/">About</a>
+        </li>
+        
+        <li>
+            <a href="/index.xml" target="_blank">RSS</a>
+        </li>
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>标签</h5>
+    <div>
+        
+        <span>
+            <a href="">Tags</a>
+        </span>
+        
+        <span>
+            <a href="https://deepwind.one/tags/pandas/">pandas</a>
+        </span>
+        
+        <span>
+            <a href="https://deepwind.one/tags/ssh/">ssh</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>链接</h5>
+    <ul>
+        
+        <li>
+            <a href="https://gcoder5.com" target="_blank"><span>GCoder</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="https://deepwind.one">@deepwind</a> | 基于  <a href="https://gohugo.io/" target="_blank">Hugo</a> 构建</p>
+    </div>
+</footer>
+
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

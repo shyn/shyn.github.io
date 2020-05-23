@@ -14,22 +14,22 @@
 
 
 
-<title>Complex Standalone</title>
+<title>Posts - Complex Standalone</title>
 
 <meta name="author" content="@deepwind" />
 <meta name="description" content="A minimal hugo theme powered by Primer CSS." />
 
-<meta property="og:title" content="Complex Standalone" />
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="A minimal hugo theme powered by Primer CSS." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://deepwind.one/" />
+<meta property="og:url" content="https://deepwind.one/posts/" />
 <meta property="og:image" content="https://deepwind.one/img/og.png"/>
 <meta property="og:updated_time" content="2020-05-23T11:03:35+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://deepwind.one/img/og.png"/>
 
-<meta name="twitter:title" content="Complex Standalone"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content="A minimal hugo theme powered by Primer CSS."/>
 
 
@@ -165,6 +165,11 @@ Paper from David Parnas about information hiding.
             <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
                 
 
+<div class="widget-toc">
+    <h5>目录</h5>
+    
+</div>
+
 
 <div class="widget-pages">
     <h5>页面</h5>
@@ -250,6 +255,14 @@ Paper from David Parnas about information hiding.
 
 
 
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
 
 
 

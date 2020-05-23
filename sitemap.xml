@@ -1,149 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://dengx.in/post/deploy-google-bbr/</loc>
-    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
+    <loc>https://deepwind.one/</loc>
+    <lastmod>2020-05-23T11:03:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/resume-v1/</loc>
-    <lastmod>2017-02-20T20:10:18+08:00</lastmod>
+    <loc>https://deepwind.one/posts/</loc>
+    <lastmod>2020-05-23T11:03:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/resume/</loc>
-    <lastmod>2017-02-20T20:10:18+08:00</lastmod>
+    <loc>https://deepwind.one/tags/ssh/</loc>
+    <lastmod>2020-05-23T11:03:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/use-docker/</loc>
-    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
+    <loc>https://deepwind.one/replace-ssh-with-et/</loc>
+    <lastmod>2020-05-23T11:03:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/setup-a-secure-shadowsocks-server-in-15-minutes/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
+    <loc>https://deepwind.one/about/</loc>
+    <lastmod>2020-05-16T11:42:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/nginx.conf/</loc>
-    <lastmod>2015-08-30T22:22:11+08:00</lastmod>
+    <loc>https://deepwind.one/2019-review/</loc>
+    <lastmod>2020-01-01T22:03:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/vim101/</loc>
-    <lastmod>2015-08-13T01:04:42+08:00</lastmod>
+    <loc>https://deepwind.one/tags/pandas/</loc>
+    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/post/my-cat-bite-me/</loc>
-    <lastmod>2014-12-28T00:00:00+00:00</lastmod>
+    <loc>https://deepwind.one/high-performance-pandas/</loc>
+    <lastmod>2017-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/tags/bbr/</loc>
-    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https://deepwind.one/my-cat-bites-me/</loc>
+    <lastmod>2014-12-23T18:53:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dengx.in/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/</loc>
-    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/devops/</loc>
-    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/digitalocean/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/docker/</loc>
-    <lastmod>2016-08-23T10:01:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/nginx/</loc>
-    <lastmod>2015-08-30T22:22:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/categories/ops/</loc>
-    <lastmod>2015-08-30T22:22:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/post/</loc>
-    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/security/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/shadowsocks/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/categories/tech/</loc>
-    <lastmod>2017-02-28T09:20:06+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/text-editor/</loc>
-    <lastmod>2015-08-13T01:04:42+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/vim/</loc>
-    <lastmod>2015-08-13T01:04:42+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/vps/</loc>
-    <lastmod>2016-06-04T20:18:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2015-08-13T01:04:42+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dengx.in/tags/%E7%8C%AB/</loc>
-    <lastmod>2014-12-28T00:00:00+00:00</lastmod>
+    <loc>https://deepwind.one/notes-on-a-philosophy-of-software-design/</loc>
     <priority>0</priority>
   </url>
   
