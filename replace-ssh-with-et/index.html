@@ -93,7 +93,7 @@
 <h2 id="heading">使用代理连接</h2>
 <p>试过以上方案后发现我这个线路已经没救了，mosh 也卡，使用 mtr 看了下，国内有个节点持续丢包 60%以上…… 只能使用最后的手段，让 ssh 走代理了。</p>
 <p>这个主要是使用 ssh 的 ProxyCommand 配置。</p>
-<p>在命令行使用 <code>ssh -o 'nc -X 5 -x localhost:7891 %h %p' you-vps</code> 这里我让 ssh 走本地 7891 端口的 socks5 代理。如果经常使用应将配置写到 <code>~/.ssh/config</code> 文件。</p>
+<p>在命令行使用 <code>ssh -o 'ProxyCommand=nc -X 5 -x localhost:7891 %h %p' you-vps</code> 这里我让 ssh 走本地 7891 端口的 socks5 代理。如果经常使用应将配置写到 <code>~/.ssh/config</code> 文件。</p>
 
     </div>
 </article>

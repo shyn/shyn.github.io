@@ -47,35 +47,5 @@
       <description>16天前，我开始养猫。 他叫萌萌，不到三个月，很快就和我熟了。然后打闹起来各种抓、咬。那个小爪子真是锋利啊，感觉他对自己的爪子特别骄傲，借着利抓爬上爬下的。晚上喜欢钻我被窝，但又不好好睡觉，继续挠我。 于</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://deepwind.one/notes-on-a-philosophy-of-software-design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://deepwind.one/notes-on-a-philosophy-of-software-design/</guid>
-      <description>https://www.youtube.com/watch?v=bmSAYlu0NcY
-软件行业已经 80 年了？
-software design never teached anywhere.
-作者的斯坦福课程（cs190）和他的书。
-10x programmer skills
-Talent is overrated!
-Decomping (如何拆分、解偶)
-It&#39;s all about practice. Trial and error.
-教育问题。
-作者适合教这些内容的理由：
-  Personally he love programming.
-It&#39;s really one of top two or three things he live for. (family, programming, golf~&amp;hellip;)
-These things drive his life.
-  code 5000 lines a year.
-  如何做的，小班教学（&amp;lt;20)，从零写大project，code review，不断改进。
-给了一些原则：
-  classes should be deep
-Paper from David Parnas about information hiding.
-不要纠结于短小的函数或类，关键是抽象，抽象要深。
-  Define Errors Out of Existence
-  Tactical vs Strategic (Mindset)
-  </description>
-    </item>
-    
   </channel>
 </rss>
