@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Complex Standalone</title>
-    <link>https://deepwind.one/posts/</link>
+    <link>https://www.deepwind.one/posts/</link>
     <description>Recent content in Posts on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 23 May 2020 11:03:35 +0800</lastBuildDate>
     
-	<atom:link href="https://deepwind.one/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.deepwind.one/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>不稳定网络的 SSH 的使用</title>
-      <link>https://deepwind.one/replace-ssh-with-et/</link>
+      <link>https://www.deepwind.one/replace-ssh-with-et/</link>
       <pubDate>Sat, 23 May 2020 11:03:35 +0800</pubDate>
       
-      <guid>https://deepwind.one/replace-ssh-with-et/</guid>
+      <guid>https://www.deepwind.one/replace-ssh-with-et/</guid>
       <description>村里面的宽带线路太差，连接境外的 VPS 非常难受，ssh 一会儿就卡住、断开了。这里记录一些解决方案。 mosh mosh 属于一款可以自动断线重连同时能保持连接会话的工具，可以在切换网络的时候保持连接，比如在外面使用公共 Wi-Fi 时</description>
     </item>
     
     <item>
       <title>2019 年度总结</title>
-      <link>https://deepwind.one/2019-review/</link>
+      <link>https://www.deepwind.one/2019-review/</link>
       <pubDate>Wed, 01 Jan 2020 22:03:47 +0800</pubDate>
       
-      <guid>https://deepwind.one/2019-review/</guid>
+      <guid>https://www.deepwind.one/2019-review/</guid>
       <description>what I will do by the end of this year.</description>
     </item>
     
     <item>
       <title>pandas 性能调优</title>
-      <link>https://deepwind.one/high-performance-pandas/</link>
+      <link>https://www.deepwind.one/high-performance-pandas/</link>
       <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://deepwind.one/high-performance-pandas/</guid>
+      <guid>https://www.deepwind.one/high-performance-pandas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>被猫抓伤怎么办</title>
-      <link>https://deepwind.one/my-cat-bites-me/</link>
+      <link>https://www.deepwind.one/my-cat-bites-me/</link>
       <pubDate>Tue, 23 Dec 2014 18:53:00 +0800</pubDate>
       
-      <guid>https://deepwind.one/my-cat-bites-me/</guid>
+      <guid>https://www.deepwind.one/my-cat-bites-me/</guid>
       <description>16天前，我开始养猫。 他叫萌萌，不到三个月，很快就和我熟了。然后打闹起来各种抓、咬。那个小爪子真是锋利啊，感觉他对自己的爪子特别骄傲，借着利抓爬上爬下的。晚上喜欢钻我被窝，但又不好好睡觉，继续挠我。 于</description>
     </item>
     

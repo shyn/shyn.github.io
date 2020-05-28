@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>关于 on Complex Standalone</title>
-    <link>https://deepwind.one/about/</link>
+    <link>https://www.deepwind.one/about/</link>
     <description>Recent content in 关于 on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 16 May 2020 11:42:20 +0800</lastBuildDate>
     
-	<atom:link href="https://deepwind.one/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.deepwind.one/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

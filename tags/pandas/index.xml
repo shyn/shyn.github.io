@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pandas on Complex Standalone</title>
-    <link>https://deepwind.one/tags/pandas/</link>
+    <link>https://www.deepwind.one/tags/pandas/</link>
     <description>Recent content in pandas on Complex Standalone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://deepwind.one/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.deepwind.one/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pandas 性能调优</title>
-      <link>https://deepwind.one/high-performance-pandas/</link>
+      <link>https://www.deepwind.one/high-performance-pandas/</link>
       <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://deepwind.one/high-performance-pandas/</guid>
+      <guid>https://www.deepwind.one/high-performance-pandas/</guid>
       <description></description>
     </item>
     
