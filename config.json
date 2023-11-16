@@ -1,0 +1,18 @@
+{
+	"title": "Complex Standalone",
+	"displayTitle": "eew",
+	"subTitle": "醉梦不知天在水，满船星梦压星河",
+	"homeUrl": "https://lovex.in",
+	"avatarUrl": "https://avatars.githubusercontent.com/u/899449?v=4",
+	"faviconUrl": "",
+	"singlePage": ["link", "about"],
+	"email": "imvvqX@gmail.com",
+	"startSite": "1/4/2017",
+	"filingNum": "",
+	"onePageListNum": 15,
+	"commentLabelColor": "#006b75",
+	"yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+	"i18n":"CN",
+    	"nightTheme":"dark_colorblind",
+    	"GMEEK_VERSION":"main"
+}
