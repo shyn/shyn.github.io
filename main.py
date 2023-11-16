@@ -14,7 +14,7 @@ My personal blog using issues and GitHub Actions
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
-BACKUP_DIR = "BACKUP"
+BACKUP_DIR = "markdown"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
