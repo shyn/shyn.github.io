@@ -16,6 +16,7 @@ jobs:
   sync:
     name: Generate README
     runs-on: ubuntu-latest
+    if: github.repository_owner_id == github.envent.issue.user.id
     env:
       BACKUP: markdown
     steps:
