@@ -1,5 +1,9 @@
 name: Context testing
-on: push
+on: 
+  push:
+  issues:
+  issue_comment:
+
 
 jobs:
   dump_contexts_to_log:
