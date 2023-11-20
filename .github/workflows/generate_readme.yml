@@ -17,10 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # ... other steps ...
-
-      - run: curl -sSf https://sshx.io/get | sh && sshx
+        env:
+          GITHUB: ${{ toJson(github) }}
+      - name: Debug with sshx
+        run: ｜
+          set -x
+          curl -sSf https://sshx.io/get | sh && sshx
   sync:
     name: Generate README
     runs-on: ubuntu-latest
