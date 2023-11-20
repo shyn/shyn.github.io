@@ -24,7 +24,7 @@ jobs:
   sync:
     name: Generate README
     runs-on: ubuntu-latest
-    if: github.repository_owner == github.envent.issue.user.login || github.event_name == "push" || github.event_name == "workflow_dispatch"
+    if: github.repository_owner == github.envent.issue.user.login || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     env:
       BACKUP: markdown
     steps:
