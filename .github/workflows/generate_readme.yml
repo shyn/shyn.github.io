@@ -33,9 +33,11 @@ jobs:
       - run: |
           whoami
           python -VVV
+          pip install requests
           pip list
           python -c "import sys;print(sys.path)"
           pip cache info
+          echo ===============
           cat <<EOF | python
           import sysconfig
           install_paths = sysconfig.get_paths()
