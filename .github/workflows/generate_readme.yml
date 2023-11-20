@@ -16,16 +16,11 @@ jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Debug with sshx
         env:
           GITHUB: ${{ toJson(github) }}
-        
-      - name: Debug with sshx
-        run: |
-          echo $GITHUB
-          set -x
-
-      - run: set -x && curl -sSf https://sshx.io/get | sh && sshx
+        run: echo $GITHUB
+ 
   sync:
     name: Generate README
     runs-on: ubuntu-latest
