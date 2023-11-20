@@ -34,6 +34,7 @@ jobs:
           whoami
           python -VVV
           pip list
+          python -c "import sys;print(sys.path)"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
