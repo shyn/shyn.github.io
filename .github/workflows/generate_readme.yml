@@ -21,7 +21,7 @@ jobs:
           GITHUB: ${{ toJson(github) }}
         
       - name: Debug with sshx
-        run: ｜
+        run: |
           echo $GITHUB
           set -x
 
