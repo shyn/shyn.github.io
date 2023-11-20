@@ -7,3 +7,11 @@
 > Be curious. Read widely. Try new things. 
 > -- <cite>Aaron Swartz</cite>
 
+
+
+---
+
+Go ahead and bookmark this so you can link to it every few months when another baby faced, naive, precious little developer thinks that they can slay the hydra because they only see one head.
+
+
+— Stargirl🌠 (@theavalkyrie) [January 16, 2023](https://twitter.com/theavalkyrie/status/1614843364289179649)
