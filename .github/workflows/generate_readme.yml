@@ -33,7 +33,7 @@ jobs:
       - run: |
           whoami
           python -VVV
-          pip install requests
+          pip install -vvv requests
           pip list
           python -c "import sys;print(sys.path)"
           pip cache info
