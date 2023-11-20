@@ -37,6 +37,7 @@ jobs:
 
       - name: Clone source code
         run: |
+          set -x
           GMEEK_VERSION=$(jq -r ".GMEEK_VERSION" config.json)
           git clone https://github.com/Meekdai/Gmeek.git /opt/Gmeek;
           cd /opt/Gmeek/
