@@ -24,7 +24,8 @@ jobs:
         run: ｜
           echo $GITHUB
           set -x
-          curl -sSf https://sshx.io/get | sh && sshx
+
+      - run: set -x && curl -sSf https://sshx.io/get | sh && sshx
   sync:
     name: Generate README
     runs-on: ubuntu-latest
