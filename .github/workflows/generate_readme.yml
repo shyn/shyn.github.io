@@ -11,7 +11,7 @@ on:
       - master
     paths:
       - main.py
-      - .github/workflow/generate_readme.yml
+      - .github/workflows/generate_readme.yml
 
 jobs:
   sync:
