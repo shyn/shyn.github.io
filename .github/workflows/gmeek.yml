@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   issues:
     types: [opened, edited]
+  push:
+    paths:
+      - '*.json'
+      - '.github/workflows/gmeek.yml'
 
 jobs:
   build:
