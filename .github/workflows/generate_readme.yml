@@ -36,6 +36,12 @@ jobs:
           pip list
           python -c "import sys;print(sys.path)"
           pip cache info
+          cat <<EOF | python
+          import sysconfig
+          install_paths = sysconfig.get_paths()
+          print(install_paths['purelib'])
+          EOF
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
