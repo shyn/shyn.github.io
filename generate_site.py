@@ -48,7 +48,7 @@ def hugo_generate_one(issue):
     md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     # label color is not used
     labels = [label.name for label in issue.labels]
-    md = HUGO_TEMPLATE.format(title=issue.title, body=issue.body, date=issue.created_at[:-10],
+    md = HUGO_TEMPLATE.format(title=issue.title, body=issue.body, date=str(issue.created_at)[:10],
                          draft=bool(list(filter(lambda l:l=='draft', labels))),
                          slug=slug,
                          tags=', '.join(labels),
