@@ -52,7 +52,7 @@ jobs:
           hugo new site $OUTPUT
           python generate_site.py $GH_TOKEN $REPO 
           cd $OUTPUT
-          cat config.toml
+          cat hugo.toml
           hugo
           
       - name: Setup Pages
