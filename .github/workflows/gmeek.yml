@@ -1,63 +1,58 @@
-name: build Gmeek
+name: build site
 
 on:
   workflow_dispatch:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
+  issue_comment:
+    types: [created, deleted]
   push:
     paths:
       - '*.json'
       - '.github/workflows/gmeek.yml'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+
 jobs:
   build:
     name: Generate blog
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    if: github.event.repository.owner.id == github.event.issue.user.id
     permissions: write-all
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HUGO_VERSION: v0.120.4
+      REPO: ${{ github.repository }}
+      OUTPUT: output
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-
-      - name: Get config.json
-        run: |
-          echo "====== check config.josn file ======"
-          cat config.json
-          echo "====== check config.josn end  ======"
-          sudo apt-get install jq
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
-
-      - name: Clone source code
-        run: |
-          set -x
-          GMEEK_VERSION=$(jq -r ".GMEEK_VERSION" config.json)
-          git clone https://github.com/Meekdai/Gmeek.git /opt/Gmeek;
-          cd /opt/Gmeek/
-          lastTag=$(git describe --tags `git rev-list --tags --max-count=1`)
-          if [ $GMEEK_VERSION == 'last' ]; then git checkout $lastTag; else git checkout $GMEEK_VERSION; fi;
+          python-version: 3.12
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install -r /opt/Gmeek/requirements.txt
+          pip install pygithub sqids
 
-      - name: Generate new html
+      - name: Generate markdown
         run: |
-          cp -r ./* /opt/Gmeek/
-          cd /opt/Gmeek/
-          python Gmeek.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
-          cp -a /opt/Gmeek/docs ${{ github.workspace }} 
-          cp -a /opt/Gmeek/backup ${{ github.workspace }} 
-          cp /opt/Gmeek/blogBase.json ${{ github.workspace }} 
-          
+          gh release down $HUGO_VERSION --repo gohugoio/hugo -p '*linux-amd64*' --output hugo.tar.gz
+          tar zxf hugo.tar.gz && mv hugo /usr/local/bin
+          hugo new site $OUTPUT
+          python generate_site.py $GH_TOKEN $REPO 
+          cd $OUTPUT
+          hugo
       - name: update html
         run: |
           git config --local user.email "$(jq -r ".email" config.json)"
@@ -67,10 +62,14 @@ jobs:
           git push || echo "nothing to push"
           sleep 3
           
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'docs/.'
+          path: '${{ OUTPUT }}/public'
           
   deploy:
     name: Deploy blog
