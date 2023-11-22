@@ -45,7 +45,7 @@ hasCJKLanguage=true
 HUGO_TEMPLATE = """
 +++
 title = '{title}'
-date = {date}
+date = '{date}'
 draft = {draft}
 slug = '{slug}'
 tags = [{tags}]
