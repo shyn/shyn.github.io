@@ -22,6 +22,8 @@ TODO_ISSUES_LABELS = ["TODO"]
 FRIENDS_LABELS = ["Friends"]
 IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS
 
+def is_me(issue, me):
+    return issue.user.login == me
 
 def hugo_prepare_directories():
     # use hugo in the action 
