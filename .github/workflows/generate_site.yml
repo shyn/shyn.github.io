@@ -1,4 +1,4 @@
-name: build site
+name: Build site
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
   push:
     paths:
       - '*.json'
-      - '.github/workflows/gmeek.yml'
+      - '.github/workflows/generate_site.yml'
 
 permissions:
   contents: read
@@ -25,7 +25,7 @@ jobs:
   build:
     name: Generate blog
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.issue.user.id
+    if: github.event.repository.owner.id == github.event.issue.user.id || github.event_name == 'push'
     permissions: write-all
     env:
       GH_TOKEN: ${{ github.token }}
