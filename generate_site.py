@@ -33,7 +33,7 @@ def hugo_prepare_directories():
 
 sqids = Sqids(alphabet="0123456789", min_length=3)
 HUGO_CONFIG='''
-baseURL = 'http://lovex.in/"
+baseURL = 'http://lovex.in/'
 languageCode = 'zh-cn'
 title = 'Complex Standalone'
 hasCJKLanguage=true
