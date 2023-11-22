@@ -67,8 +67,8 @@ def hugo_generate(issues, me):
 
 
 def main(token, repo_name, issue_number=None):
-    user = login(token)
-    repo = get_repo(user, repo_name)
+    gh = Github(token)
+    repo = gh.get_repo(repo_name)
     issues = repo.get_issues()
     me = repo.owner.login
     
