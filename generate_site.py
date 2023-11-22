@@ -44,10 +44,10 @@ hasCJKLanguage=true
 
 HUGO_TEMPLATE = """
 +++
-title = {title}
+title = '{title}'
 date = {date}
 draft = {draft}
-slug = {slug}
+slug = '{slug}'
 tags = [{tags}]
 comments = {comments}
 +++
@@ -67,7 +67,7 @@ def hugo_generate_one(issue):
         date=str(issue.created_at)[:10],
         draft=bool(list(filter(lambda l: l == "draft", labels))),
         slug=slug,
-        tags=", ".join(labels),
+        tags=", ".join(map(lambda l:f"'{l}'", labels)),
         comments=issue.comments,
     )
 
