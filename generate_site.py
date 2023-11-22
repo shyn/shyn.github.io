@@ -65,7 +65,7 @@ def hugo_generate_one(issue):
         title=issue.title,
         body=issue.body,
         date=str(issue.created_at)[:10],
-        draft=bool(list(filter(lambda l: l == "draft", labels))),
+        draft=str(bool(list(filter(lambda l: l == "draft", labels)))).lower(),
         slug=slug,
         tags=", ".join(map(lambda l:f"'{l}'", labels)),
         comments=issue.comments,
