@@ -44,7 +44,7 @@ comments = {comments}
 '''
 
 def hugo_generate_one(issue):
-    slug = slids.encode([issue.number])
+    slug = sqids.encode([issue.number])
     md_name = os.path.join(
         dir_name, f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     )
