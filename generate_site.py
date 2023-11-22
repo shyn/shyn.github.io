@@ -1,36 +1,38 @@
 # -*- coding: utf-8 -*-
 import argparse
 import os
-import re
 
-#import markdown
-#from feedgen.feed import FeedGenerator
+# import markdown
+# from feedgen.feed import FeedGenerator
 from github import Github
 from sqids import Sqids
-#from lxml.etree import CDATA
-#from marko.ext.gfm import gfm as marko
+# from lxml.etree import CDATA
+# from marko.ext.gfm import gfm as marko
 
 MD_HEAD = """## Gitblog
 My personal blog using issues and GitHub Actions
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
-OUTPUT_DIR = os.getenv('OUTPUT', 'output')
+OUTPUT_DIR = os.getenv("OUTPUT", "output")
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
 FRIENDS_LABELS = ["Friends"]
 IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS
 
+
 def is_me(issue, me):
     return issue.user.login == me
 
-def hugo_prepare_directories():
-    # use hugo in the action 
-    os.makedirs(os.path.join(OUTPUT_DIR, 'content', 'posts'), exist_ok=True)
 
-sqids=Sqids(alphabet='0123456789', min_length=3)
-HUGO_TEMPLATE='''
+def hugo_prepare_directories():
+    # use hugo in the action
+    os.makedirs(os.path.join(OUTPUT_DIR, "content", "posts"), exist_ok=True)
+
+
+sqids = Sqids(alphabet="0123456789", min_length=3)
+HUGO_TEMPLATE = """
 +++
 title = {title}
 date = {date}
@@ -41,23 +43,28 @@ comments = {comments}
 +++
 
 {body}
-'''
+"""
+
 
 def hugo_generate_one(issue):
     slug = sqids.encode([issue.number])
     md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     # label color is not used
     labels = [label.name for label in issue.labels]
-    md = HUGO_TEMPLATE.format(title=issue.title, body=issue.body, date=str(issue.created_at)[:10],
-                         draft=bool(list(filter(lambda l:l=='draft', labels))),
-                         slug=slug,
-                         tags=', '.join(labels),
-                         comments=issue.comments
-                         )
+    md = HUGO_TEMPLATE.format(
+        title=issue.title,
+        body=issue.body,
+        date=str(issue.created_at)[:10],
+        draft=bool(list(filter(lambda l: l == "draft", labels))),
+        slug=slug,
+        tags=", ".join(labels),
+        comments=issue.comments,
+    )
 
-    generate_path = os.path.join(OUTPUT_DIR, 'content', 'posts', md_name)
-    with open(generate_path, 'w') as f:
+    generate_path = os.path.join(OUTPUT_DIR, "content", "posts", md_name)
+    with open(generate_path, "w") as f:
         f.write(md)
+    print(md)
 
 
 def hugo_generate(issues, me):
@@ -71,13 +78,12 @@ def main(token, repo_name, issue_number=None):
     repo = gh.get_repo(repo_name)
     issues = repo.get_issues()
     me = repo.owner.login
-    
+
     hugo_prepare_directories()
     hugo_generate(issues, me)
 
 
 if __name__ == "__main__":
-
     # prepare for hugo: generate hugo directories in output dir
     # generate hugo site
     # publish hugo site
