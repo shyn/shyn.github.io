@@ -8,7 +8,7 @@ on:
     types: [created, deleted]
   push:
     paths:
-      - '*.json'
+      - 'generate_site.py'
       - '.github/workflows/generate_site.yml'
 
 permissions:
