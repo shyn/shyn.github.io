@@ -47,7 +47,7 @@ def hugo_generate_one(issue):
     slug = sqids.encode([issue.number])
     md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     # label color is not used
-    labels = [label for label in issue.labels]
+    labels = [label.name for label in issue.labels]
     md = HUGO_TEMPLATE.format(title=issue.title, body=issue.body, date=issue.created_at,
                          draft=bool(list(filter(lambda l:l=='draft', labels))),
                          slug=slug,
