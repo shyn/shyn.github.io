@@ -32,6 +32,16 @@ def hugo_prepare_directories():
 
 
 sqids = Sqids(alphabet="0123456789", min_length=3)
+HUGO_CONFIG='''
+baseURL = 'http://lovex.in/"
+languageCode = 'zh-cn'
+title = 'Complex Standalone'
+hasCJKLanguage=true
+
+
+'''
+
+
 HUGO_TEMPLATE = """
 +++
 title = {title}
@@ -68,6 +78,8 @@ def hugo_generate_one(issue):
 
 
 def hugo_generate(issues, me):
+    with open(os.path.join(OUTPUT_DIR, 'hugo.toml'), 'w') as f:
+        f.write(HUGO_CONFIG)
     for issue in issues:
         if is_me(issue, me):
             hugo_generate_one(issue)
