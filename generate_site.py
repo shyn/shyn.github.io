@@ -54,24 +54,35 @@ comments = {comments}
 
 {body}
 """
+def is_page(labels: list[str]) -> bool:
+    return 'page' in labels 
 
+def is_draft(labels: list[str]) -> bool:
+    return 'draft' in labels
 
 def hugo_generate_one(issue):
-    slug = sqids.encode([issue.number])
-    md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
-    # label color is not used
     labels = [label.name for label in issue.labels]
+    if is_page(labels):
+        slug = issue.title.lower()
+        md_name = f"{issue.title.replace('/', '-').replace(' ', '.')}.md"
+    else:
+        slug = sqids.encode([issue.number])
+        md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
+    # label color is not used
     md = HUGO_TEMPLATE.format(
         title=issue.title,
         body=issue.body,
         date=str(issue.created_at)[:10],
-        draft=str(bool(list(filter(lambda l: l == "draft", labels)))).lower(),
+        draft=str(is_draft(labels)).lower(),
         slug=slug,
         tags=", ".join(map(lambda l:f"'{l}'", labels)),
         comments=issue.comments,
     )
 
-    generate_path = os.path.join(OUTPUT_DIR, "content", "posts", md_name)
+    if is_page(labels):
+        generate_path = os.path.join(OUTPUT_DIR, 'content', md_name)
+    else:
+        generate_path = os.path.join(OUTPUT_DIR, "content", "posts", md_name)
     with open(generate_path, "w") as f:
         f.write(md)
 
