@@ -74,7 +74,6 @@ def hugo_generate_one(issue):
     generate_path = os.path.join(OUTPUT_DIR, "content", "posts", md_name)
     with open(generate_path, "w") as f:
         f.write(md)
-    print(md)
 
 
 def hugo_generate(issues, me):

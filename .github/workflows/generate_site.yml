@@ -52,7 +52,16 @@ jobs:
           hugo new site $OUTPUT
           python generate_site.py $GH_TOKEN $REPO 
           cd $OUTPUT
-          cat hugo.toml
+          git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
+          cat >>hugo.toml <<EOF
+          theme="paper"
+          [params]
+          color='linen'
+          github='shyn'
+          rss=true
+          name='deepwind'
+          bio='从事机器视觉，制造业从业。现在做些深度学习、写点儿dotnet全栈。'
+          EOF
           hugo
           
       - name: Setup Pages
