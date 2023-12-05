@@ -55,7 +55,7 @@ jobs:
           git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
           cat >>hugo.toml <<EOF
           theme="paper"
-	  sectionPagesMenu = 'main'
+          sectionPagesMenu = 'main'
           [params]
           color='linen'
           github='shyn'
