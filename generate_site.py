@@ -60,8 +60,34 @@ def is_page(labels: list[str]) -> bool:
 def is_draft(labels: list[str]) -> bool:
     return 'draft' in labels
 
+def generate_frontmatter(issue, labels: list[str]) -> dict:
+    basic = {
+            'title': issue.title,
+            'date': str(issue.create_at)[:10]
+    }
+    extra = {} 
+    for label in labels:
+        if '=' in label:
+            key, value = label.split('=')
+            key_parts = key.split('.') 
+            root = extra
+            for p in key_parts[:-1]:
+                if p not in root:
+                    root[p] = {}
+                if not isinstance(root[p], dict):
+                    # unexpected key
+                    raise
+                root = root[p]
+            if (last := key_parts[-1]) in root:
+                root[last] = [root[last], value]
+            else:
+                root[last] = value
+    basic.update(extra)
+    return basic
+
+
 def hugo_generate_one(issue):
-    labels = [label.name for label in issue.labels]
+    labels: list[str] = [label.name for label in issue.labels]
     if is_page(labels):
         slug = issue.title.lower()
         md_name = f"{issue.title.replace('/', '-').replace(' ', '.')}.md"
@@ -69,16 +95,15 @@ def hugo_generate_one(issue):
         slug = sqids.encode([issue.number])
         md_name = f"{issue.number}_{issue.title.replace('/', '-').replace(' ', '.')}.md"
     # label color is not used
-    md = HUGO_TEMPLATE.format(
-        title=issue.title,
-        body=issue.body,
-        date=str(issue.created_at)[:10],
+    frontmatter = generate_frontmatter(issue, labels)
+    frontmatter.update(
         draft=str(is_draft(labels)).lower(),
         slug=slug,
-        tags=", ".join(map(lambda l:f"'{l}'", labels)),
+        tags=[label[1:] for label in labels if label.startswith('#')],
         comments=issue.comments,
     )
-
+    import json
+    md = f'{json.dumps(frontmatter)}\n{issue.body}'
     if is_page(labels):
         generate_path = os.path.join(OUTPUT_DIR, 'content', md_name)
     else:
