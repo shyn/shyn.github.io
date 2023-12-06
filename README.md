@@ -13,7 +13,7 @@ My personal blog using issues and GitHub Actions
 ## draft
 - [使用Rime输入法](https://github.com/shyn/shyn.github.io/issues/12)--2023-11-27
 - [使用github写博客的](https://github.com/shyn/shyn.github.io/issues/6)--2023-11-20
-## menu=main
+## menu.main.name=关于
 - [About](https://github.com/shyn/shyn.github.io/issues/11)--2023-11-23
 ## page
 - [About](https://github.com/shyn/shyn.github.io/issues/11)--2023-11-23
