@@ -4,7 +4,7 @@ import os
 
 # import markdown
 # from feedgen.feed import FeedGenerator
-from github import Github
+from github import Github, Issue
 from sqids import Sqids
 # from lxml.etree import CDATA
 # from marko.ext.gfm import gfm as marko
@@ -60,10 +60,10 @@ def is_page(labels: list[str]) -> bool:
 def is_draft(labels: list[str]) -> bool:
     return 'draft' in labels
 
-def generate_frontmatter(issue, labels: list[str]) -> dict:
+def generate_frontmatter(issue: Issue, labels: list[str]) -> dict:
     basic = {
             'title': issue.title,
-            'date': str(issue.create_at)[:10]
+            'date': str(issue.created_at)[:10]
     }
     extra = {} 
     for label in labels:
