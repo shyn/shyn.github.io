@@ -74,3 +74,10 @@
 - 某段时间又看到blog.douchi.space上的两篇文章（从tg频道看到）
 - 最近再次想起伊洪分享的基于github写blog的系统：gmeek
 - 终于再次倒腾起来
+
+
+---
+
+一些写博客的参考：
+
+- 为什么无法坚持写博客：https://djyde.github.io/blog/reason-why-your-blog-is-not-alive/
