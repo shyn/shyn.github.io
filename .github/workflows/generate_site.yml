@@ -47,7 +47,7 @@ jobs:
 
       - name: Generate markdown
         run: |
-          gh release download v$HUGO_VERSION --repo gohugoio/hugo -p "hugo_${HUGO_VERSION}_linux-amd64.tar.gz" --output hugo.tar.gz
+          gh release download v$HUGO_VERSION --repo gohugoio/hugo -p "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" --output hugo.tar.gz
           tar zxf hugo.tar.gz && mv hugo /usr/local/bin
           hugo new site $OUTPUT
           python generate_site.py $GH_TOKEN $REPO 
