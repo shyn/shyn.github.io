@@ -52,7 +52,7 @@ jobs:
           hugo new site $OUTPUT
           python generate_site.py $GH_TOKEN $REPO 
           cd $OUTPUT
-          git submodule add https://github.com/reorx/hugo-PaperModX/ themes/papermodx
+          git submodule add https://github.com/shyn/hugo-PaperModX/ themes/papermodx
           cat >>hugo.toml <<EOF
           theme="papermodx"
           sectionPagesMenu = 'main'
