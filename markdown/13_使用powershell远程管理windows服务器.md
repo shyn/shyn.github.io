@@ -14,7 +14,7 @@ WinRM 是基于HTTP或HTTPS的SOAP协议，标准端口是80和443，但是Windo
 
 有些PowerShell命令有个ComputerName的参数，可以让命令在远程主机上执行，这些命令使用的是RPC协议。它们和PowerShell Remoting是不同的。这些命令可以使用一下命令查看
 ```pwsh
-Users\Admin> Get-Command | Where-Object {
+Get-Command | Where-Object {
      $_.Parameters.Keys -contains "ComputerName" -and
      $_.Parameters.Keys -notcontains "Session"
 }
