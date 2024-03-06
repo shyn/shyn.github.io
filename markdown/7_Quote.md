@@ -15,3 +15,9 @@ Go ahead and bookmark this so you can link to it every few months when another b
 
 
 — Stargirl🌠 (@theavalkyrie) [January 16, 2023](https://twitter.com/theavalkyrie/status/1614843364289179649)
+
+---
+
+大多数编程不再是艺术，也不再是高级工程。大多数程序都是微不足道的：编码人员只需要理解某些特定的接口，然后编写一些逻辑和胶水代码。
+
+-- Antirez，Redis 的作者
