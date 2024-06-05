@@ -17,6 +17,8 @@ My personal blog using issues and GitHub Actions
 ## draft
 - [使用github写博客的](https://github.com/shyn/shyn.github.io/issues/6)--2023-11-20
 - [观影](https://github.com/shyn/shyn.github.io/issues/5)--2023-11-19
+## github-actions
+- [自动令牌身份验证](https://github.com/shyn/shyn.github.io/issues/3)--2023-11-16
 ## menu.main.name=关于
 - [About](https://github.com/shyn/shyn.github.io/issues/11)--2023-11-23
 ## page
